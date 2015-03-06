@@ -48,6 +48,7 @@ Awestruct::Extensions::Pipeline.new do
   extension Awestruct::Extensions::RestClientExtensions::EnableGetCache.new
   extension Awestruct::Extensions::RestClientExtensions::EnableJsonConverter.new
   extension Awestruct::Extensions::Identities::Storage.new
+=begin
   # the JIRA extension registers its own extensions
   Awestruct::Extensions::Jira::Project.new(self, 'ARQ:12310885')
   extension Awestruct::Extensions::Jira::ReleaseNotes.new('ARQGRA:12312222', 'graphene')
@@ -87,7 +88,7 @@ Awestruct::Extensions::Pipeline.new do
   # Needs to be after Indexifier to get the links correct
   # FIXME we need a patched atomizer to carry over our custom fields (release & component)
   extension Awestruct::Extensions::PatchedAtomizer.new(:posts, '/blog/atom.xml', :additional_tags => ['arquillian'])
-
+=end
   # Needs to be after Indexifier to get the linking correct; second argument caps changelog per guide
   extension Awestruct::Extensions::Guide::Index.new('/guides', 15)
 
