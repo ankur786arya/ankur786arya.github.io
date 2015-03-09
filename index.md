@@ -1,6 +1,7 @@
 ---
 layout: default
 title: ScrumDo - Some sub title
+bodyclass: home
 ---
 
 # ScrumDo 

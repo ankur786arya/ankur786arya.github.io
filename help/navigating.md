@@ -3,6 +3,7 @@ layout: help
 title: Navigating the Site
 ---
 ----
+
 ##Top Navbar
 
 You can navigate all of ScrumDo through our top navbar/menu system.
