@@ -1,0 +1,5 @@
+paginate: 10
+STATIC_URL: "https://ankur786arya.github.io"
+paginate_path: "blog/:num"
+github_url: "https://ankur786arya.github.io/"
+markdown: kramdown

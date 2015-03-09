@@ -1,0 +1,26 @@
+---
+head: 
+    <link rel="stylesheet" href="/blog/blog.css" />     
+
+---
+{% include header.html %}
+
+<div class="blog-mini-index span3 pull-right">
+    Recent Blog Posts<br/>
+    <ul>
+    {% for post in site.posts limit:5 %}      
+        <li>
+        <a class="continue" href="{{post.url}}">{{post.title}}</a>
+        </li>
+    {% endfor %} 
+    </ul>
+    <a href="/blog">See All Posts</a>
+</div>
+
+
+<div class="main-content">        
+            <h1>{{page.title}} <small>{{page.date||date_to_string}}</small></h1>
+            {{content}}            
+</div>
+         
+{% include footer.html %}

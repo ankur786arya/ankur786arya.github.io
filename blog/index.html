@@ -1,0 +1,34 @@
+---
+layout: default
+title: ScrumDo Blog
+---
+
+
+<h1>ScrumDo Blog</h1>
+<hr />
+
+
+{% for post in paginator.posts %}  
+    
+        <div style="width: 800px; margin-left: auto; margin-right: auto">
+        <h2>
+            <a class="continue" href="{{post.url}}">{{post.title}}</a> 
+            <small>{{post.date || date_to_string}}</small>
+        </h2>
+
+            {{post.content}}
+        </div>
+        <br/><hr/><br/><br/><br/>
+
+{% endfor %}
+
+
+
+<div class="pagination">
+  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="/blog/{{ paginator.next_page }}" class="next">Next</a>
+  {% else %}
+    <span class="next ">Next</span>
+  {% endif %}
+</div>

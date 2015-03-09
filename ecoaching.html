@@ -1,0 +1,755 @@
+<html>
+<head>
+<title>eCoaching - ScrumDo Premium Service Option</title>
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+<style>
+/*div, ul, li{border:solid 1px;}*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat|Arizonia);
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+body
+{
+    padding:0px;
+    margin:0px;
+    cursor:default;
+    font-family: Arial, Helvetica, sans-serif;
+	font-style:normal;
+	font-weight:normal;
+	color:#6a6a6a;
+}
+h1,h2,h3,h4,h5
+{
+    margin:0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+	font-style:normal;
+}
+h1{font-size: 45px; 	font-weight:normal;}
+h2{font-size: 80.454556%; 	font-weight:normal; font-family:'Bree Serif',serif; color: #474747; text-align: center;}
+h3{font-size: 20px; 	font-weight:normal;}
+h4{font-size: 15px;	font-weight:normal; font-family: "Myriad Pro",arial; font-weight: 600; color: #535353;}
+h5{font-size: 14px; 	font-weight:normal;}
+h6{font-size: 10px; color:#989898; 	font-weight:normal; margin-top: 10px;}
+
+#header, #main, #footer, .wrapper
+{
+	position:relative;
+	/*min-width:992px;*/	
+}
+
+
+.wrapper
+{
+	width:81.8%;
+	margin-left:auto;
+	margin-right: auto;
+	box-shadow: 0px 0px 10px 0px #333;
+}
+.imgwidth{
+	
+	width:99.9%;
+	
+}
+.row
+{
+	margin:0px;
+	padding:0px 7px;
+}
+
+.sitefontmedium{
+	
+	font-family: "Myriad Pro",arial;
+	font-size: 14px;
+	color: #535353;
+	line-height: 30px;
+	text-align: center;
+	padding-left: 50px;
+	padding-right: 50px;
+	
+}
+
+.borderbottom1px
+{
+ 	border-bottom: 1px solid #ebebeb; width: 50%; text-align: center; margin-left: auto; margin-right: auto; padding-top: 30px;
+}
+.sitefonthead{
+	
+	font-family: 'Bree Serif', serif;	
+	font-size: 30px;
+	color: #474747;
+	line-height: 30px;
+	text-align: center;
+	
+}
+
+#listitems ul li { display: inline; font-family: "Myriad Pro",arial; list-style: circle; font-size: 15px;}
+#listitems ul li:before {
+   content: "\2022";
+   font-size: 29px;
+}
+#listitems ul li a
+{
+text-decoration: none;
+padding-right: 4em;
+padding-left: 4px;
+color: #535353;
+}
+
+#listitems ul li a:hover
+{
+color: #373636;
+}
+
+.aligncenter
+{
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.clockico
+{
+	background:#ffffff url(../images/clockico.png) no-repeat;
+	height: 84px;
+	width: 63px;
+	position: absolute;
+	margin-left: 40px;
+
+}
+
+.roundedcorner{
+	
+	border-radius: 12px; 
+	border: 1px solid #ccc;
+	padding: 20px;
+	line-height: 35px;
+	box-shadow: 3px 4px 0px #bdbdbd;
+}
+
+.linkblue{
+	
+	color: #26a7e6;
+	text-decoration: none;
+}
+.linkblue:hover{
+	
+	color: #45bcf6;
+	text-decoration: none;
+}
+.specialtextmedium{
+	font-family: "Myriad Pro",arial;
+	font-size: 14px;
+	color: #535353;
+	line-height: 30px;
+	text-align: center;
+	padding-left: 90px;
+	padding-right: 90px;
+}
+
+.borderbottom90pc{
+	 	border-bottom: 1px solid #ebebeb; width: 95%; margin-left: auto; margin-right: auto; padding-top: 30px;
+
+	
+}
+.trainingdivleft{
+	
+	width: 40%; float:left; padding-top:30px; padding-left: 40px; line-height: 30px; text-align:center; font-family: 'Myriad Pro', arial; font-size:14px; 
+
+}
+
+.trainingdivright{
+	width: 40%; float:right; padding-top:30px; padding-right: 40px; line-height: 30px; text-align:center; font-family: 'Myriad Pro', arial; font-size:14px; 
+	
+}
+.bgcolorgray
+{
+	background-color: #efefef;
+}
+
+.buynowdiv
+{
+float:right; background-color: #f6882f; padding-left:10px; padding-right:10px; color: #ffffff; font-family: 'Myriad Pro', arial; font-size:14px; padding-top:10px; padding-bottom:10px; margin-top:-60px !important; margin-right: 110px; text-decoration: none;
+}
+
+.buynowdiv2
+{
+float:right; background-color: #f6882f; padding-left:10px; padding-right:10px; color: #ffffff; font-family: 'Myriad Pro', arial; font-size:14px; padding-top:10px; padding-bottom:10px; margin-top:-60px !important; margin-right: 130px; text-decoration: none;
+}
+
+.buynowbtn
+{
+background-color: #f6882f; padding-left:20px; padding-right:20px; color: #ffffff; font-family: 'Myriad Pro', arial; font-size:14px; padding-top:10px; padding-bottom:10px; width: 40%; text-decoration: none; text-align: center; 
+}
+
+.learnmorebtn
+{
+background-color: #26a7e6; padding-left:20px; padding-right:20px; color: #ffffff; font-family: 'Myriad Pro', arial; font-size:14px; padding-top:10px; padding-bottom:10px; width: 40%; text-decoration: none; text-align: center; 
+}
+
+
+.addbuttonblue
+{
+background-color: #26a7e6; padding-left:25px; padding-right:25px; color: #ffffff; font-family: 'Myriad Pro', arial; font-size:14px; padding-top:6px; padding-bottom:6px;
+}
+
+
+.get_scrumdo_btn:hover{text-decoration:none;}
+
+
+/*
+ *  Header style
+ */
+#header
+{
+	height:142px;
+	background:#353535;
+}
+.logo_top
+{
+	display:inline-block;
+	margin-left:5px;
+	margin-top:43px;
+	margin-right:28px;	
+}
+#header .get_scrumdo_btn_holder
+{
+	width:206px;
+	padding-top:41px;
+	text-align:center;
+	line-height:10px;
+	color:#989898;
+	margin-right:8px;
+}
+
+/*
+ *  Main style
+ */
+#main
+{
+	background:#ffffff url(../images/main_bg.png) top repeat-x;
+}
+
+#black {height:230px;width:90%;border:0px solid #000000; margin-left: auto; margin-right: auto;}
+#black div{margin-top:10px;}
+.green {border:0px solid #009900; width:auto; float:left; margin-left: auto; margin-right: auto;}
+.red{border: 0px solid #FF0000; width:auto; float:right; margin-left: auto; margin-right: auto;}
+
+.lastbtndiv {border:0px solid #009900; width:50%; float:left; margin-left: auto; margin-right: auto;}
+
+.bigbluefont{
+
+	font-family: "Myriad Pro",arial;
+	font-size: 30px;
+	color: #26a7e6;
+}
+    
+.grayfontsupersmall
+{
+	font-family: "Myriad Pro",arial;
+	font-size: 10px;
+	color: #717171;
+}
+
+#blackbig {height:810px; width:992px;border:0px solid #000000;}
+#blackbig div{margin-top:5px;}
+.greenbig {border:0px solid #009900; width:650px; float:left;margin-left:5px;}
+.redbig{border: 0px solid #FF0000; width:270px; height: 680px; float:right;margin-right:5px; background-color: #f1f2f3; -moz-border-radius-bottomright: 10px;
+-moz-border-radius-bottomleft: 10px; -webkit-border-bottom-left-radius: 10px; -webkit-border-bottom-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;}
+
+.font12px
+{
+	font-size: 12px;
+}
+
+.font14px
+{
+	font-size: 14px;
+}
+
+.blueclass
+{
+	color:#26a7e6;
+
+}
+
+.quote
+{
+	margin-top: 50px;
+}
+
+.addthis_toolbox{padding-top:27px;}
+.addthis_toolbox a{/*display:inline-block; margin-right:20px;*/ min-width:100px;}
+
+.row .featured_content .content{position:relative; padding:30px 0px;}
+.row .featured_content .hr{width:890px; height:1px; margin:0 auto; background:#e5e5e5;}
+
+.tableheadtext
+{
+ 	font-family: arial, sans-serif;
+ 	font-size: 10px;
+ 	text-transform:uppercase;
+ 	font-weight: bold;
+ 	color: #fff;	
+ 	padding-left: 0px;
+}
+
+.paddinglft15px
+{
+ 	padding-left: 25px;
+}
+.paddinglft5px
+{
+	padding-left: 5px;
+}
+.tablesubtextgray
+{
+	font-family: arial, sans-serif;
+ 	font-size: 12px;
+ 	color: #6a6a6a;	
+ 	/*padding-left: 10px;*/
+ 	background-color: #f1f2f3;
+ 	padding-top: 8px;
+ 	padding-bottom: 8px;
+
+}
+
+.tablesubtextwhitebg
+{
+	font-family: arial, sans-serif;
+ 	font-size: 12px;
+ 	color: #6a6a6a;	
+ 	/*padding-left: 10px;*/
+ 	background-color: #ffffff;
+ 	padding-top: 8px;
+ 	padding-bottom: 8px;
+
+}
+.paddingleft10px
+{
+	padding-left: 10px;
+}
+
+.paddingright12px
+{
+	padding-right: 12px;
+}
+
+.alignleftpad10px
+{
+	padding-left: 10px;
+}
+
+.table_header{position:relative; background:#26a7e6; height:49px; padding-top:0px; padding-bottom: 0px; padding-left: 7px; padding-right: 7px; font-size:12px; font-weight:400; color:#ffffff; z-index:12;}
+.table_header img{margin-right:7px; margin-left:10px; margin-top:-3px;}
+.table_special_bg
+{
+	position:relative;
+	width:675px; 
+	height:51px; 
+	margin-left:-15px; 
+	margin-top:4px; 
+	background:url(../images/scrumbg.png) no-repeat;	
+	color:#ffffff;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
+	font-size:13px !important;
+	font-weight:400;
+	/*text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.16);*/
+	z-index:10;
+}
+
+.table_special_bgbig
+{
+	position:relative;
+	width:1015px; 
+	height:55px; 
+	margin-left:-15px; 
+	margin-top:4px; 
+	background:url(../images/scrumtblbg.png) no-repeat;	
+	color:#ffffff;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
+	font-size:13px !important;
+	font-weight:400;
+	/*text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.16);*/
+	z-index:10;
+}
+.table_v_line{ width:1px; height:100%; position:absolute; top:0px; left:155px; background:#eaeaea; z-index:11;}
+.box_shadow
+{
+	-webkit-box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow:    0px 4px 7px rgba(0, 0, 0, 0.3);
+	box-shadow:         0px 4px 7px rgba(0, 0, 0, 0.3);
+	border-collapse:separate;
+}
+
+/* Testimonial Slider: CSS */
+.example_text {
+    text-align: left;
+    background-color: #f1f2f3;
+    -moz-border-radius: 15px;
+	border-radius: 15px;
+	font-family: 'Arial','Montserrat', sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 28px;
+}
+    .example_text .ocarousel_window {
+        height: 270px;
+        width: 260px;
+        margin: 0 auto;
+        padding: 0;
+    }
+        .example_text .ocarousel_window_slides div {
+            width: 260px;
+            height: 300px;
+        }
+
+
+
+/* Applications Slider CSS */
+
+.bx-wrapper .testimonials-thumbnail{ margin: 0px 0px 15px; }
+.bx-wrapper .testimonials-title{ text-align: center;  margin: 25px 15px 3px; font-size: 24px; line-height: 1; }
+.bx-wrapper .testimonials-carousel-thumbnail{ max-width: 35%; float: left; margin-right: 20px; }
+.bx-wrapper .testimonials-carousel-thumbnail img{ display: block;   margin-right: 20px; margin-top: 5px;}
+.bx-wrapper .testimonials-carousel-context{ overflow: hidden; }
+.bx-wrapper .testimonials-name{ font-size: 18px; margin-bottom: 15px; color:#000000; font-weight:400;}
+.bx-wrapper span{ font-size: 11px; margin-left:10px; color:#aaa; font-family: Georgia, Arial, Helvetica, sans-serif; font-style:italic; }
+.bx-wrapper {position: relative;margin: 10px auto;padding: 0;width:100%;*zoom: 1;}
+.bx-wrapper .slide {padding-top:0;margin:0;display: block;}
+.bx-wrapper .bx-viewport {padding:0px;margin-left:0;z-index:1;width:100%;}
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {position: absolute;display:none;bottom: -30px;width: 100%;}
+.bx-wrapper .bx-loading {min-height: 50px;background: url(images/bx_loader.gif) center center no-repeat #fff;height: 100%;width: 100%;position: absolute;top: 0;left: 0;z-index: 2000;}
+.bx-wrapper .bx-pager {text-align: center;font-size: .85em;font-weight: bold;color: #666;padding-top: 20px;}
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {display: inline-block;*zoom: 1;*display: inline;}
+.bx-wrapper .bx-pager.bx-default-pager a {background: #666;text-indent: -9999px;display: block;width: 10px;height: 10px;margin: 0 5px;outline: 0;-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 5px;}
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {background: #000;}
+.bx-wrapper .bx-next {position: absolute;top: 0;right: 0;width: 30px;border-left:0px solid #ddd;height: 30px;cursor: pointer; background: url(../images/arrowright.png) no-repeat 0 0 ;}
+.bx-wrapper .bx-prev {position: absolute;top: 0px;right: 30px;border-right:0px solid #ddd;width: 30px;height: 30px;cursor: pointer;background: url(../images/arrowleft.png) no-repeat 0 0 ;}
+.bx-wrapper .bx-controls-direction a {position: absolute;top: 0;margin-top: -55px;margin-right: 0px;outline: 0;width: 30px;height: 30px;text-indent: -9999px;z-index: 9999;}
+
+.appdesc
+{
+	font-family: arial, sans-serif;
+ 	font-size: 14px;
+ 	color: #6a6a6a;
+ 	line-height: 23px;	
+ 	margin-top: -10px;
+ 	/*padding-left: 10px;*/
+}
+
+.appReadMoreblue
+{
+	font-family: arial, sans-serif;
+ 	font-size: 12px;
+ 	color: #26a7e6;
+}
+
+ul
+{
+	padding: 0px;
+	font-family: arial,sans-serif;
+	font-size: 13px;
+	line-height: 25px;
+	
+}
+.muchmore
+{
+	font-family: arial,sans-serif;
+	font-size: 15px;
+	color: #26a7e6;
+	font-weight: bold;
+	text-decoration: none;
+	
+}
+.graybg
+{
+	background-color: #f1f2f3;
+	width: 100%;
+}
+
+.featurecol1 {
+    float: left;
+    width: 30.3%;
+    height: 600px;
+    border-right: 0px solid #e5e5e5;
+	padding-left: 20px;
+    padding-right: 20px; 
+
+}
+.featurecol2 {
+    float: none;
+    height: 600px;
+    overflow: hidden;
+    width: 30.3%;
+    padding-left: 20px;
+    padding-right: 20px;
+    display:table-cell; /* turn this off to lock height at 65px */
+}
+.featurecol3 {
+    float: right;
+    width: 30.3%;
+    border-left: 1px solid #e5e5e5;
+    margin-top:40px;
+	height: 500px;
+	    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.paddingTop25px
+{
+	padding-top: 25px;
+}
+
+
+.centerhead
+{
+text-align: center;
+
+}
+/*
+ *  Footer style
+ */
+#footer
+{
+	height:42px;
+	line-height:42px;
+	background:#323232 url(images/footer_bg.png) top repeat-x;
+	font-family: 'Montserrat', Arial, sans-serif;	
+	font-weight:400;
+	font-style:normal;
+}
+#footer a, #footer span{text-decoration:none; color:#dddddd; font-size:11px;}
+#footer a:hover{text-decoration:underline;}
+#footer .floatLeft a{margin-right:15px;}
+#footer .floatRight a, #footer .floatRight span{margin-left:15px;}
+
+.posRel{position:relative;}
+.posAbs{position:absolute;}
+
+.floatLeft{float:left;}
+.floatRight{float:right;}
+.clearBoth{clear:both;}
+
+
+.displayNone{display:none;}
+
+.lineHeight24px{line-height:24px;}
+.lineHeight28px{line-height:28px;}
+.lineHeight35px{line-height:35px;}
+.bold{font-weight:bold;}
+
+.color_6a6a6a{color:#6a6a6a;}
+.color_414040{color:#414040;}
+
+.width700px{width:700px;}
+
+.padding0{padding:0px !important;}
+
+.paddingLeft17px{padding-left:17px;}
+
+.paddingRight17px{padding-right:17px;}
+
+.paddingTop20px{padding-top:20px;}
+.paddingTop27px{padding-top:27px;}
+.paddingTop40px{padding-top:40px;}
+
+.paddingBottom20px{padding-bottom:20px;}
+
+.margin_0_auto{margin:0 auto;}
+.marginTop15px{margin-top:15px;}
+
+</style>
+
+</head>
+<body>
+	<div id="header">
+    	<div class="wrapper">            
+        	<div class="floatLeft">
+            	<a class="logo_top" href="/">
+                	<img src="http://cdn2.scrumdo.com/static/v50/scrumdo/landing/images/logo_top.png" width="205" height="40" border="0" />
+                </a>
+            	<img src="http://cdn2.scrumdo.com/static/v50/scrumdo/landing/images/man_with_tie.png" width="97" height="142" border="0" />
+            </div>
+            <div class="floatRight get_scrumdo_btn_holder">
+            	<a href="http://scrumdo.com/account/signup/" class="btn btn-success btn-success-iefix">Get ScrumDo</a>
+                <br/>
+                <h6>30 Days Trial Free!</h6>
+            </div>
+            <div class="clearBoth"></div>
+        </div>
+    </div>
+	<!-- #header ends -->    
+    
+    <!-- Main Area Starts -->
+    
+    <div id="main">
+		<div class="wrapper">
+            <!-- IMAGE
+			<div>
+				<div>
+					<img src="images/banner.jpg" border="0" alt="New For 2014" width="100%">
+				</div>
+			</div>
+            END IMAGE -->
+            <br />
+            
+            <div style="float: right; width: 350px; margin: 5px 50px 8px 20px; padding: 8px; border: solid 2px; background-color: #FCEAA1;">
+            <h3 style="font-weight: bold; text-align: center;">Coaching is Powerful</h3>
+            <p>Coaching maximizes professional development, and is a proven way of helping teams produce value more quickly.  In a 2008 study of Agile rollouts, Computer World found that teams with coaching support increased their productivity by 300% vs. just 35% for those without support.</p>
+                
+            <img style="margin: 5px auto 8px 15px;" src="img/coaching-graph.png" />
+            </div>                   
+                    
+			<div class="row">
+                <h1 style="margin-left: 50px;">eCoaching</h1>
+				<div class="paddingTop40px sitefontmedium" style="text-align:left">
+					<p>It's possible for teams and organizations to develop Lean and Agile practices on their own, but it takes time and is fraught with potential traps and pitfalls along the way.  </p> 
+                    <p>For a limited time (while we evaluate the scalability of the program), you can engage our experienced coaches to work with your teams (or PMO) and benefit from their practical, hands-on advice gleaned from experiences working in environments ranging from start-ups to Fortune 50 corporations. </p> 
+                    <p>If you're looking for a way to train your employees that doesn't assume they already know everything about Scrum or Lean/Agile fundamentals (such as iterative and incremental delivery, User Stories, Sprints, Story Points and Backlogs), and doesn't take everyone out of the office for hours (or days) at a time, then our eCoaching program is the perfect answer!</p>
+                </div>
+			</div>
+            
+			<div class="borderbottom90pc"></div>			
+            
+			<div class="row">
+				<div class="sitefonthead">
+					<h2>eCoaching Solutions</h2>
+				</div>
+			</div>            
+            
+			<div class="row">                
+				<div style="float: left; margin: 30px 15px 8px 50px;">
+					<div class="roundedcorner" style="background-color: #30D595;">
+						<p style="text-align: center; font-weight: bold; font-size: 16px; line-height: 1.25;">Tell me more about<br/>eCoaching</p>
+                        
+                        <form action="https://docs.google.com/a/codegenesys.com/forms/d/1cRdMtGzflc55W_6utD2CnkGl8hilqa7WhTu17j43a-A/formResponse" method="POST" id="vsm-form" target="page_iFrame" onsubmit="">
+
+                            <label class="ss-q-item-label" for="entry_1990633630"><div class="ss-q-title">Your name:
+                            <span class="ss-required-asterisk">*</span></div></label>                            
+                            <input type="text" name="entry.1990633630" value="" class="ss-q-short" id="entry_1990633630" dir="auto" aria-label="Your name:  " aria-required="true" required="" title="">  
+                            
+                            <label class="ss-q-item-label" for="entry_949418311"><div class="ss-q-title">Your e-mail:
+                            <span class="ss-required-asterisk">*</span></div></label>                            
+                            <input type="email" name="entry.949418311" value="" class="ss-q-short" id="entry_949418311" dir="auto" aria-label="Your e-mail:  Please enter a valid e-mail address" aria-required="true" required="" title="Please enter a valid e-mail address">
+                            
+                            <label class="ss-q-item-label" for="entry_1321757639"><div class="ss-q-title">Your phone number:
+                            </div></label>                            
+                            <input type="text" name="entry.1321757639" value="" class="ss-q-short" id="entry_1321757639" dir="auto" aria-label="Your phone number:  " title="">                            
+                            
+                            <input type="hidden" name="draftResponse" value="[,,&quot;-4806384482313749665&quot;]">
+                            <input type="hidden" name="pageHistory" value="0">
+                            <input type="hidden" name="fbzx" value="-4806384482313749665">
+                            
+                            <input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">
+                        </form>
+                        
+                        <script>
+                        function confirmForm() {
+                            document.getElementById('form-message').style.display='block'; 
+                            document.getElementById('vsm-form').reset();
+                            return true;
+                        }                        
+                        </script>
+                        
+                        <iframe name="page_iFrame" style="display:none" onload="confirmForm();">                   
+                        </iframe> 
+                        
+                        <div id="form-message" style="display: none;">Your request has been submitted!</div>
+                        
+					</div>
+				</div>              
+                
+				<div class="paddingTop20px sitefontmedium" style="text-align:left">
+				    Our eCoaching program is designed to help a Scrum team master core fundamentals through brief one-hour engagements on specific topics.  The content of each engagement will be tailored to move your team's current level of skills and understanding to the next appropriate level. For example, if your team is struggling with estimation, we'll observe the process they're currently employing and train on those areas best suited to their further development.  We recommend starting with one of the topics below:  
+				</div>
+                
+                <div style="text-align:left; float: left; width: 25%; margin: 20px 10px auto 25px;">
+                 <ul>
+                    <li>User Story Writing</li>
+                    <li>Estimation</li>
+                    <li>Release &amp; Sprint Planning</li>
+                </ul>       
+                </div>
+                
+                <div style="text-align:left; float: left; width: 25%; margin: 20px auto auto 10px;">
+                 <ul>
+                    <li>Lean &amp; Agile Metrics</li>
+                    <li>Continuous Improvement Practices</li>
+                    <li>Adding Scrumban</li>
+                </ul>       
+                </div> 
+                <div class="floatRight get_scrumdo_btn_holder">
+                <form name="PrePage" method = "post" action = "https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx"> <input type = "hidden" name = "LinkId" value ="a931279c-bb6d-4199-8fd5-a460ee2b72ed" /> <a class="btn btn-success btn-success-iefix" onclick="PrePage.submit();">Get eCoaching</a> </form>
+                 <h6>Low Risk. Max Value.</h6>
+                </div>
+
+                     
+			</div>
+            
+			
+            <div class="paddingTop20px"></div>
+            <div class="borderbottom90pc"></div>
+            <div class="paddingTop20px"></div>            
+             
+
+	    <div class="clearBoth"></div>
+    
+    <!-- Main Area Ends -->
+	
+	<!-- #footer starts -->
+	<div id="footer">
+    	<div class="wrapper">
+        	<div class="row">
+            	<div class="posRel">
+                    <div class="floatLeft">
+                        <!--<a href="#">News</a> <a href="#">Training</a> <a href="#">Crew Call</a> <a href="#">FAQ</a> <a href="#">Contact</a>-->
+                    </div>
+                    <div class="floatRight">
+                         <!--<a href="#">Terms of Use</a>--> <a href="privacy-policy.html">Privacy Policy</a> <span>&copy; 2015 ScrumDo</span>
+                    </div>
+                    <div class="clearBoth"></div>
+            	</div>
+            </div>
+        </div>
+    </div>
+	<!-- #footer ends -->
+
+<!-- JS -->
+<script>
+     $('.testimonials-slider').bxSlider({
+			slideWidth: 992,
+			minSlides: 1,
+			maxSlides: 1,
+			slideMargin: 32,
+			auto: true,
+			autoControls: true
+		  });
+</script>
+                
+<script type="text/javascript">
+	      var _gaq = _gaq || [];
+	      _gaq.push(['_setAccount', 'UA-19817142-1']);
+	      _gaq.push(['_trackPageview']);
+
+	      (function() {
+	        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	      })();
+	      var google_conversion_id = 1021662849;
+	      var google_custom_params = window.google_tag_params;
+	      var google_remarketing_only = true;
+	  </script>
+
+	  <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+	  <noscript>
+	    <div style="display:inline;">
+	    <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1021662849/?value=0&amp;guid=ON&amp;script=0"/>
+	    </div>
+	  </noscript>                
+<!-- END JS -->
+
+</body>
+</html>
