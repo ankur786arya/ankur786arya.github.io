@@ -138,3 +138,11 @@
 	font-size:30px;
 }
 .fan-box-outer{min-height:400px;}
+.support .rows{display:table;}
+.roundedcorner {
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 3px 4px 0 #bdbdbd;
+    line-height: 35px;
+    padding: 20px;
+}
