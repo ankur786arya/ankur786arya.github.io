@@ -7,7 +7,7 @@ bodyclass: home support
   
   <div class="container">
 	<div class="rows">
-	<h1>eCoaching</h1>
+	<h1 class="eCoaching">eCoaching</h1>
 	<div style="float: right; width: 350px; margin: 5px 50px 8px 20px; padding: 8px; border: solid 2px; background-color: #FCEAA1;">
 	<h3 style="font-weight: bold; text-align: center;">Coaching is Powerful</h3>
 	<p>Coaching maximizes professional development, and is a proven way of helping teams produce value more quickly.  In a 2008 study of Agile rollouts, Computer World found that teams with coaching support increased their productivity by 300% vs. just 35% for those without support.</p>

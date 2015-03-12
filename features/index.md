@@ -6,6 +6,7 @@ bodyclass: home features
 
   
   <div class="container centered">
+	<h1 class="eCoaching">ScrumDo Features</h1>
 	<h3 class="section-title">Lead Time Histogram, Cumulative Flow Diagram, Burndown, Burnup, or Flow Effeciency? </h3>
 	<p class="section-subtitle">From the simplest to the most informative type of chart, we show you your iteration progress the way you want to see it.</p>
 	<img src="/images/charts2.png">

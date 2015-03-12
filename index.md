@@ -38,7 +38,12 @@ bodyclass: home
 	<div class="container">
 		<div id="spotlight">
 			<h2 class="icon crown">Customer Spotlight</h2>
-			<ul></ul>
+			<ul>
+			<li class="supotlight-video">
+			<img src="http://img.youtube.com/vi/KAyFcMVb0nI/0.jpg" alt="" />
+			<a href="http://www.youtube.com/watch?v=KAyFcMVb0nI&width=700&height=430" rel="prettyPhoto" title=""><img class="play-button" src="/images/video-play-button.png" alt="" /></a>
+			</li>
+			</ul>
 		</div>
 		
 		<div id="news">
@@ -49,10 +54,10 @@ bodyclass: home
 		
 		<div id="events">
 			<h2 class="icon invasion">Upcoming Events</h2>
-			<ul></ul>
-			<div class="more">
+			<iframe src="https://www.google.com/calendar/embed?src=codegenesys.com_lb6h35i09i7674u548ag0klrrk%40group.calendar.google.com&ctz=America/New_York" style="border: 0" width="400" height="600" frameborder="0" scrolling="no"></iframe>
+			<!-- <div class="more">
               <a href="/invasion/events">View all events</a>
-            </div>
+            </div> -->
 		</div>
   </div>
   </div>
