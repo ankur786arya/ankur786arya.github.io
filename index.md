@@ -55,7 +55,7 @@ pageid: home
 		
 		<div id="events">
 			<h2 class="icon invasion">Upcoming Events</h2>
-			<iframe src="https://www.google.com/calendar/embed?src=codegenesys.com_lb6h35i09i7674u548ag0klrrk%40group.calendar.google.com&ctz=America/New_York" style="border: 0" width="400" height="600" frameborder="0" scrolling="no"></iframe>
+			<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=codegenesys.com_lb6h35i09i7674u548ag0klrrk%40group.calendar.google.com&amp;color=%2323164E&amp;ctz=America%2FNew_York" style=" border-width:0 " width="400" height="600" frameborder="0" scrolling="no"></iframe>
 			<!-- <div class="more">
               <a href="/invasion/events">View all events</a>
             </div> -->

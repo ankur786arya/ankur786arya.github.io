@@ -159,3 +159,8 @@ text-align:left;
 }
 .supotlight-video{position:relative;}
 .supotlight-video .play-button{position: absolute;left: 90px;top: 60px;cursor: pointer;box-shadow: 0 0 0 transparent !important;opacity:0.8;}
+
+.exit-to{position: absolute;right: 0;top: 27px;width: 159px;}
+.exit-to span{font-size: 18px;margin-right: 6px;}
+.exit-to span a:hover{color:#f7490f;text-decoration:none;}
+.exit-to img{width: 20px;margin-top: -2px;}
