@@ -1,0 +1,6 @@
+paginate: 10
+STATIC_URL: "http://cdn2.scrumdo.com/static/v51/scrumdo/"
+paginate_path: "blog/:num"
+github_url: "https://ankur786arya.github.io/help-site/"
+base_url: "https://ankur786arya.github.io/help-site"
+markdown: kramdown

@@ -1,0 +1,29 @@
+.sidebar-help {
+    margin-top: 15px;
+}
+.sidebar-help h2 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.sidebar-help h1 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 28px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.help-content, .main-content {
+    padding-right: 250px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
