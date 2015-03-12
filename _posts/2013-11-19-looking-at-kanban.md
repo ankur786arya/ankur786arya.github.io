@@ -52,10 +52,10 @@ It's not quite ready for general consumption yet, but if you're interested in he
 Here are a couple screenshots to give you an idea of what we're working on.
 
 This one is of an example board.  It shows off some of the new features like being able to place cells anywhere, some WIP limit displays, and the ability to track multiple workflows.
-![Kanban Board](/images/blog/kanbanexampleboard.png)
+![Kanban Board]({{ site.base_url }}/images/blog/kanbanexampleboard.png)
 
 This screenshot shows two of the reports that we'll be releasing with initially, a lead time histogram, and a cumulative flow diagram.  The really exciting thing about both of these are all of the ways you can slice & dice your data via the report options to see exactly what you want to.  We'll have some blog posts dedicated to just that in the future.
-![Kanban Reports](/images/blog/kanbanreports.png)
+![Kanban Reports]({{ site.base_url }}/images/blog/kanbanreports.png)
 
 
 As part of all of this, we're also working on some big improvements to some areas that will affect both Iteration based and Iterations-less projects on ScrumDo.  Things like live-updates of the boards, and better high level planning tools.  Watch for those in upcoming months.

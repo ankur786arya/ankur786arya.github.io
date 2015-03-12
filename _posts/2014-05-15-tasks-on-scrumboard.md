@@ -10,7 +10,7 @@ Today, we've released a new way to view your Scrum/Kanban Board by seeing the ta
 If you have a time boxed project, first select the gear icon on your scrum board to open the config window, and select the
 "Task Board" option.
 
-![scrumboardconfig.png](/images/blog/scrumboardconfig.png)
+![scrumboardconfig.png]({{ site.base_url }}/images/blog/scrumboardconfig.png)
 
 
 
@@ -18,7 +18,7 @@ After doing this, you will notice that your "Doing" column is a lot wider than i
   
 
 
-![taskboard1.png](/images/blog/taskboard1.png)
+![taskboard1.png]({{ site.base_url }}/images/blog/taskboard1.png)
   
 
 
@@ -29,7 +29,7 @@ page.
   
 
 
-![taskboard2.png](/images/blog/taskboard2.png)
+![taskboard2.png]({{ site.base_url }}/images/blog/taskboard2.png)
 
 
 ### Continuous Flow Projects
@@ -41,7 +41,7 @@ and select the Tasks view.
 Note: Make sure your cell is big enough to fit all of your task columns, or the layout gets
 very funky very quickly.
 
-![cfconfig.png](/images/blog/cfconfig.png)
+![cfconfig.png]({{ site.base_url }}/images/blog/cfconfig.png)
 
 
 ### Why not sooner?

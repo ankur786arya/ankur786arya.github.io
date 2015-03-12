@@ -16,7 +16,7 @@ Visualizing your Lead Time distributions are extremely useful.  They provide dat
 </p>
 
   
-![Lead Time Histogram has many filtering options](/images/blog/leadtime1.png)
+![Lead Time Histogram has many filtering options]({{ site.base_url }}/images/blog/leadtime1.png)
 <p>
 Don’t confuse lead time with the amount of effort required to complete a user story!  For example, a user story can have a lead time of 1 week but actual working time might only have been one day.  Lead time distributions reflect system performance, and can be used to establish service level expectations, improve predictability, and when combined with insights gleaned from other system measurements, help us precisely target and prioritize improvement efforts.
 </p>

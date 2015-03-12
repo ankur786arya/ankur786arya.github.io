@@ -16,7 +16,7 @@ pageid: home
 	</div>
   </header>
 
-  <div id="slideshow">
+  <div id="slideshow" class="container">
 	<div class="item active">
 	  <div style="background-image: url('{{ site.base_url }}/images/book-cover-image.jpg'); background-size: 60%; background-position: 100% 5px" class="layout-photo">
 		<div class="visual"></div>

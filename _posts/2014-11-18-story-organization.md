@@ -14,7 +14,7 @@ misleading.
 
 So, we're narrowing down those three mechanisms to two.
 
-![tags_labels.png](/images/blog/tags_labels.png)
+![tags_labels.png]({{ site.base_url }}/images/blog/tags_labels.png)
 
 **Labels**
 

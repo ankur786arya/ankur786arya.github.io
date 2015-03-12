@@ -16,7 +16,7 @@ Our goals were:
 
 You will now see a list of projects like the following:
 
-![newdash.png](/images/blog/newdash.png)
+![newdash.png]({{ site.base_url }}/images/blog/newdash.png)
 
 You will see a project if you either watch that project or you have a story or task assigned 
 to you in a current iteration.

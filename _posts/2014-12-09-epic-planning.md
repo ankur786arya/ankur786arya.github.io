@@ -24,8 +24,8 @@ In the new design, we’re completely combining these two tools into a single un
 
 Like the current version, you can still decompose epics into stories, and then move the stories into iterations. 
 
-![planning-epics-1.png](/images/blog/planning-epics-1.png)
+![planning-epics-1.png]({{ site.base_url }}/images/blog/planning-epics-1.png)
 
 With the new UX you will have the flexibility to schedule stories directly onto the board!  This can be especially useful if you have different swim-lanes for different teams.
 
-![planning-epics-2.png](/images/blog/planning-epics-2.png)
+![planning-epics-2.png]({{ site.base_url }}/images/blog/planning-epics-2.png)

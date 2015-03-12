@@ -15,7 +15,7 @@ you will only see the magnifying glass.
 When you click that icon, you'll get a nice read-only view of the story.  Assuming you have edit access, you
 can click on any of the fields to enter an edit mode.
 
-![Edit Dialog](/images/blog/editdialog.png)
+![Edit Dialog]({{ site.base_url }}/images/blog/editdialog.png)
 
 If your story has image attachments, you can click on the thumbnails to get a quick 
 view of it without downloading the file.

@@ -12,7 +12,7 @@ as useful as possible - [beta invite link](https://zapier.com/developer/invite/1
 
 Here are some of the zaps I've been testing with:
 
- ![Sample Zaps](/images/blog/zapier.png)
+ ![Sample Zaps]({{ site.base_url }}/images/blog/zapier.png)
 
  This list is just scratching the surface of what's possible using this platform.
  We're looking for some people to try this out and let us know how we could improve it.
