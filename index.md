@@ -18,7 +18,7 @@ pageid: home
 
   <div id="slideshow">
 	<div class="item active">
-	  <div style="background-image: url('/images/book-cover-image.jpg'); background-size: 60%; background-position: 100% 5px" class="layout-photo">
+	  <div style="background-image: url('{{ site.base_url }}/images/book-cover-image.jpg'); background-size: 60%; background-position: 100% 5px" class="layout-photo">
 		<div class="visual"></div>
 		<div class="container">
 		  <div style="width:500px;margin-top:-100px;margin-left:50px" class="headline">
@@ -42,7 +42,7 @@ pageid: home
 			<ul>
 			<li class="supotlight-video">
 			<img src="http://img.youtube.com/vi/KAyFcMVb0nI/0.jpg" alt="" />
-			<a href="http://www.youtube.com/watch?v=KAyFcMVb0nI&width=700&height=430" rel="prettyPhoto" title=""><img class="play-button" src="/images/video-play-button.png" alt="" /></a>
+			<a href="http://www.youtube.com/watch?v=KAyFcMVb0nI&width=700&height=430" rel="prettyPhoto" title=""><img class="play-button" src="{{ site.base_url }}/images/video-play-button.png" alt="" /></a>
 			</li>
 			</ul>
 		</div>
