@@ -25,7 +25,7 @@ pageid: modules
 
 						<div class="cols"><!--Start of Feature-->
 							<div class="feature-image">
-                                <a href="/addons/jira">
+                                <a href="{{ site.base_url }}/addons/jira">
 									<div class="mask-container-thumbnail">
 										<img alt="" src="https://d11uy15xvlvge3.cloudfront.net/static/v107/scrumdo/images/addons/JiraTile.jpg">
 
@@ -41,7 +41,7 @@ pageid: modules
 
 						<div class="cols"><!--Start of Feature-->
 							<div class="feature-image">
-								<a href="/addons/basecamp">
+								<a href="{{ site.base_url }}/addons/basecamp">
 									<div class="mask-container-thumbnail">
 										<img alt="" src="https://d11uy15xvlvge3.cloudfront.net/static/v107/scrumdo/images/addons/BasecampTile.jpg">
 
@@ -61,7 +61,7 @@ pageid: modules
 
 						<div class="cols"><!--Start of Feature-->
 							<div class="feature-image">
-                                <a href="/addons/github">
+                                <a href="{{ site.base_url }}/addons/github">
 									<div class="mask-container-thumbnail">
 										<img alt="Github" src="https://d11uy15xvlvge3.cloudfront.net/static/v107/scrumdo/images/addons/GithubTile.jpg">
 
@@ -76,7 +76,7 @@ pageid: modules
 
 						<div class="cols"><!--Start of Feature-->
 							<div class="feature-image">
-                                <a href="/addons/harvest">
+                                <a href="{{ site.base_url }}/addons/harvest">
 									<div class="mask-container-thumbnail">
 										<img alt="" src="https://d11uy15xvlvge3.cloudfront.net/static/v107/scrumdo/images/addons/HarvestTile.jpg">
 

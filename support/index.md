@@ -13,7 +13,7 @@ pageid: support
 	<h3 style="font-weight: bold; text-align: center;">Coaching is Powerful</h3>
 	<p>Coaching maximizes professional development, and is a proven way of helping teams produce value more quickly.  In a 2008 study of Agile rollouts, Computer World found that teams with coaching support increased their productivity by 300% vs. just 35% for those without support.</p>
 		
-	<img src="/images/coaching-graph.png" style="margin: 5px auto 8px 15px;">
+	<img src="{{ site.base_url }}/images/coaching-graph.png" style="margin: 5px auto 8px 15px;">
 	</div>
 	
 	<div style="text-align:left" class="paddingTop40px sitefontmedium">

@@ -10,7 +10,7 @@ pageid: help
 <div id="content-header">
 		<div class="container">
 			<h1>
-			<a href="/help/">ScrumDo Help</a>
+			<a href="{{ site.base_url }}/help/">ScrumDo Help</a>
 			</h1>
 		</div>
 	</div>

@@ -7,37 +7,36 @@
         <!-- <title>{{page.title}}</title> -->
         <title>ScrumDo Agile, Scrum, Kanban, Scrumban Help</title>
 		
-		<link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-touch-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-touch-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-touch-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-touch-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-touch-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-touch-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-touch-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-touch-icon-152x152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon-180x180.png">
-		<link rel="icon" type="image/png" href="/images/favicon/favicon-32x32.png" sizes="32x32">
-		<link rel="icon" type="image/png" href="/images/favicon/android-chrome-192x192.png" sizes="192x192">
-		<link rel="icon" type="image/png" href="/images/favicon/favicon-96x96.png" sizes="96x96">
-		<link rel="icon" type="image/png" href="/images/favicon/favicon-16x16.png" sizes="16x16">
-		<link rel="icon" href="/images/favicon/favicon.ico" type="image/x-icon" />
-		<link rel="shortcut icon" href="/images/favicon/favicon.ico" type="image/x-icon" />
-		
-		<link rel="manifest" href="/manifest.json">
+		<link rel="apple-touch-icon" sizes="57x57" href="{{ site.base_url }}/images/favicon/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="{{ site.base_url }}/images/favicon/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="{{ site.base_url }}/images/favicon/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="{{ site.base_url }}/images/favicon/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="{{ site.base_url }}/images/favicon/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="{{ site.base_url }}/images/favicon/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="{{ site.base_url }}/images/favicon/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="{{ site.base_url }}/images/favicon/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="{{ site.base_url }}/images/favicon/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" href="{{ site.base_url }}/images/favicon/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="{{ site.base_url }}/images/favicon/android-chrome-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="{{ site.base_url }}/images/favicon/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="{{ site.base_url }}/images/favicon/favicon-16x16.png" sizes="16x16">
+		<link rel="icon" href="{{ site.base_url }}/images/favicon/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="{{ site.base_url }}/images/favicon/favicon.ico" type="image/x-icon" />
+		<link rel="manifest" href="{{ site.base_url }}/images/favicon/manifest.json">
 		<meta name="msapplication-TileColor" content="#da532c">
-		<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+		<meta name="msapplication-TileImage" content="{{ site.base_url }}/images/favicon/mstile-144x144.png">
 		<meta name="theme-color" content="#ffffff">
 		
-        <link rel="stylesheet" href="{{ site.STATIC_URL }}/generated_css/libs.css" />
-        <link rel="stylesheet" media="print" href="{{ site.STATIC_URL }}/css/print.css" />
-        <link rel="stylesheet" href="{{ site.STATIC_URL }}/generated_css/scrumdo_scss.css" />
+        <link rel="stylesheet" href="{{ site.base_url }}/css/generated_css/libs.css" />
+        <link rel="stylesheet" media="print" href="{{ site.base_url }}/css/css/print.css" />
+        <link rel="stylesheet" href="{{ site.base_url }}/css/generated_css/scrumdo_scss.css" />
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.css" />
         <link rel="stylesheet" href="/js/prettyPhoto.css" />
 		<link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,400italic,500italic' rel='stylesheet' type='text/css' /><!-- Google Web Fonts - Roboto -->
-        <link rel="stylesheet" href="/css/static.css" />
-        <link rel="stylesheet" href="/css/style-arq.css" />
+        <link rel="stylesheet" href="{{ site.base_url }}/css/static.css" />
+        <link rel="stylesheet" href="{{ site.base_url }}/css/style-arq.css" />
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
-        <script src="/js/jquery.prettyPhoto.js"></script> 
+        <script src="{{ site.base_url }}/js/jquery.prettyPhoto.js"></script> 
 		<script type="text/javascript" charset="utf-8">
 		  $(document).ready(function(){
 			$("a[rel^='prettyPhoto']").prettyPhoto();
@@ -88,21 +87,21 @@
             <span class="icon-bar"></span>
           </a>
           
-          <a href="/" class="brand"> 
-           <img src="/images/logo-new.png" alt="ScrumDo"/>
+          <a href="{{ site.base_url }}" class="brand"> 
+           <img src="{{ site.base_url }}/images/logo-new.png" alt="ScrumDo"/>
           </a>
           <nav role="navigation" class="nav-collapse">
             <ul class="nav">
               <!-- <li><a href="/invasion/">Invasion!</a></li> -->
-              <li><a {% if page.pageid == "features" %}class="active"{% endif %} href="/features/">Features</a></li>
-              <li><a {% if page.pageid == "help" %}class="active"{% endif %} href="/help/">Guides</a></li>
-              <li><a {% if page.pageid == "blog" %}class="active"{% endif %} href="/blog/">Blog</a></li>
-              <li><a {% if page.pageid == "community" %}class="active"{% endif %} href="/community/">Community</a></li>
-              <li><a {% if page.pageid == "modules" %}class="active"{% endif %} href="/modules/">Modules</a></li>
-              <li><a {% if page.pageid == "support" %}class="active"{% endif %} href="/support/">Support</a></li>
+              <li><a {% if page.pageid == "features" %}class="active"{% endif %} href="{{ site.base_url }}/features/">Features</a></li>
+              <li><a {% if page.pageid == "help" %}class="active"{% endif %} href="{{ site.base_url }}/help/">Guides</a></li>
+              <li><a {% if page.pageid == "blog" %}class="active"{% endif %} href="{{ site.base_url }}/blog/">Blog</a></li>
+              <li><a {% if page.pageid == "community" %}class="active"{% endif %} href="{{ site.base_url }}/community/">Community</a></li>
+              <li><a {% if page.pageid == "modules" %}class="active"{% endif %} href="{{ site.base_url }}/modules/">Modules</a></li>
+              <li><a {% if page.pageid == "support" %}class="active"{% endif %} href="{{ site.base_url }}/support/">Support</a></li>
             </ul>
           </nav>
         </div>
-		<div class="exit-to"><span><a href="http://ScrumDo.com">ScrumDo.com <img src="/images/exit.png" alt="" /></a></span></div>
+		<div class="exit-to"><span><a href="http://ScrumDo.com">ScrumDo.com <img src="{{ site.base_url }}/images/exit.png" alt="" /></a></span></div>
       </div>
     </header>

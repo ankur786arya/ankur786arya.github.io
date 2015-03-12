@@ -10,19 +10,19 @@ pageid: features
 	<h1 class="eCoaching">ScrumDo Features</h1>
 	<h3 class="section-title">Lead Time Histogram, Cumulative Flow Diagram, Burndown, Burnup, or Flow Effeciency? </h3>
 	<p class="section-subtitle">From the simplest to the most informative type of chart, we show you your iteration progress the way you want to see it.</p>
-	<img src="/images/charts2.png">
+	<img src="{{ site.base_url }}/images/charts2.png">
 	
 	<hr class="taper">
 	
 	<h3 class="section-title">Company Wide Statistics</h3>
 	<p class="section-subtitle">You can view statistics, and create releases across projects for your whole company.</p>
-	<img src="/images/release.png">
+	<img src="{{ site.base_url }}/images/release.png">
 	
 	<hr class="taper">
 	
 	<h3 class="section-title">Not just a <span class="normal">Scrum Board</span></h3>
 	<p class="section-subtitle">Use the Story List to quickly manage many stories.  View stories in several different sizes to get a big picture or to dig into the details.  Manipulate stories in bulk to save time.</p>
-	<img alt="annotation" src="/images/storylist.png" class="center-image" id="tour-7">
+	<img alt="annotation" src="{{ site.base_url }}/images/storylist.png" class="center-image" id="tour-7">
 	
 	<hr class="taper">
 	
@@ -39,7 +39,7 @@ pageid: features
 		</div>
 		<div class="span4">
 			<div class="thumbnail" style="min-height: 400px">							
-				<img src="/images/kwip.png">
+				<img src="{{ site.base_url }}/images/kwip.png">
 				<div class="caption">
 					<h3>Work in Progress Limits</h3>
 					<p>Limiting the amount of work in progress (WIP) helps kanban teams keep a steady rhythm by making sure no one is ever overwhelmed. Work can be limited by row or column</p>
@@ -100,7 +100,7 @@ pageid: features
 
 		<div class="span4 ">
 			<div class="thumbnail" style="min-height: 230px">
-				<img src="/images/puzzle-piece.jpg">
+				<img src="{{ site.base_url }}/images/puzzle-piece.jpg">
 				
 				<div class="caption">
 					<h3>Developer API</h3>
@@ -113,7 +113,7 @@ pageid: features
 
 		<div class="span4">
 			<div class="thumbnail" style="min-height: 230px">
-				<img src="/images/personalproject.png">
+				<img src="{{ site.base_url }}/images/personalproject.png">
 
 				<div class="caption">
 					<h3>Personal Kanban</h3>
@@ -127,7 +127,7 @@ pageid: features
 
 		<div class="span4">
 			<div class="thumbnail" style="min-height: 230px">
-				<img src="/images/excel-export.png">
+				<img src="{{ site.base_url }}/images/excel-export.png">
 				
 				<div class="caption">
 					<h3>Excel Exports</h3>
