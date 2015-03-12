@@ -1,0 +1,870 @@
+<html>
+<head>
+<title>ScrumDo - Premium Options / Scrum &amp; Kanban Training</title>
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<script src="js/jquery-min.js" type="text/javascript"></script>
+<script src="js/jquery.bxslider.min.js" type="text/javascript"></script>
+<link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+blockquote
+{
+    clear: both;
+    font-style: italic;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px 10px 0 50px;
+    font-family: "Myriad Pro",arial;
+	position: relative;
+    quotes: none;
+    background: url(https://dl.dropbox.com/u/96099766/RotatingTestimonial/open-quote.png) 0 0 no-repeat;
+    border: 0px;
+    font-size: 120%;
+    line-height: 200%;
+}
+/*div, ul, li{border:solid 1px;}*/
+
+body
+{
+    padding:0px;
+    margin:0px;
+    cursor:default;
+    font-family: Arial, Helvetica, sans-serif;
+	font-style:normal;
+	font-weight:normal;
+	color:#6a6a6a;
+}
+h1,h2,h3,h4,h5
+{
+    margin:0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+	font-style:normal;
+}
+h1{font-size: 45px; 	font-weight:normal;}
+h2{font-size: 80.454556%; 	font-weight:normal; font-family:'Bree Serif',serif; color: #474747; text-align: center;}
+h3{font-size: 20px; 	font-weight:normal; font-family:'Bree Serif',serif;}
+h4{font-size: 15px;	font-weight:normal; font-family: "Bree Serif",arial; font-weight: 600; color: #535353;}
+h5{font-size: 14px; 	font-weight:normal;}
+h6{font-size: 10px; color:#989898; 	font-weight:normal; margin-top: 10px;}
+
+#header, #main, #footer, .wrapper
+{
+	position:relative;
+	/*min-width:992px;*/	
+}
+
+
+.wrapper
+{
+	width:81.8%;
+	margin-left:auto;
+	margin-right: auto;
+	box-shadow: 0px 0px 10px 0px #333;
+}
+.imgwidth{
+	
+	width:99.9%;
+	
+}
+.row
+{
+	margin:0px;
+	padding:0px 7px;
+}
+
+.sitefontmedium{
+	
+	font-family: "Myriad Pro",arial;
+	font-size: 14px;
+	color: #535353;
+	line-height: 30px;
+	text-align: left;
+	padding-left: 50px;
+	padding-right: 50px;
+	
+}
+
+.listpadding{
+	
+	font-family: "Myriad Pro",arial;
+	font-size: 14px;
+	color: #535353;
+	line-height: 30px;
+	text-align: left;
+	padding-left: 16px;
+	padding-right: 50px;
+	
+}
+
+.borderbottom1px
+{
+ 	border-bottom: 1px solid #ebebeb; width: 50%; text-align: center; margin-left: auto; margin-right: auto; padding-top: 30px;
+}
+
+.borderleft1px
+{
+ 	border-left: 1px solid #ebebeb; width: 50%;;
+}
+
+
+.sitefonthead{
+	
+	font-family: 'Bree Serif', serif;	
+	font-size: 30px;
+	color: #474747;
+	line-height: 30px;
+	text-align: center;
+	
+}
+
+#listitems ul li { display: inline; font-family: "Myriad Pro",arial; list-style: circle; font-size: 15px;}
+#listitems ul li:before {
+   content: "\2022";
+   font-size: 29px;
+}
+#listitems ul li a
+{
+text-decoration: none;
+padding-right: 4em;
+padding-left: 4px;
+color: #535353;
+}
+
+#listitems ul li a:hover
+{
+color: #373636;
+}
+
+
+#listitemstopics ul li {text-align: left; font-family: "Myriad Pro",arial; list-style:none; font-size: 15px;}
+#listitemstopics ul li:before {
+content: "";
+    border-color: transparent #111;
+    border-style: solid;
+    border-width: 0.35em 0 0.35em 0.45em;
+    display: block;
+    height: 0;
+    width: 0;
+    left: -1em;
+    top: 1.1em;
+    position: relative;}
+#listitemstopics ul li a
+{
+text-decoration: none;
+padding-right: 4em;
+padding-left: 4px;
+color: #535353;
+}
+
+#listitemstopics ul li a:hover
+{
+color: #373636;
+}
+
+
+.aligncenter
+{
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.clockico
+{
+	background:#ffffff url(../images/clockico.png) no-repeat;
+	height: 84px;
+	width: 63px;
+	position: absolute;
+	margin-left: 40px;
+
+}
+
+section {
+padding: 20px 0;
+}
+section {
+display: block;
+}
+
+.roundedcorner{
+	
+	border-radius: 12px; 
+	border: 1px solid #ccc;
+	padding: 20px;
+	line-height: 35px;
+	box-shadow: 3px 4px 0px #bdbdbd;
+}
+
+.linkblue{
+	
+	color: #26a7e6;
+	text-decoration: none;
+}
+.linkblue:hover{
+	
+	color: #45bcf6;
+	text-decoration: none;
+}
+.specialtextmedium{
+	font-family: "Myriad Pro",arial;
+	font-size: 14px;
+	color: #535353;
+	line-height: 30px;
+	text-align: center;
+	padding-left: 90px;
+	padding-right: 90px;
+}
+
+.borderbottom90pc{
+	 	border-bottom: 1px solid #ebebeb; width: 95%; margin-left: auto; margin-right: auto; padding-top: 30px;
+
+	
+}
+.trainingdivleft{
+	
+	width: 40%; float:left; padding-top:30px; padding-left: 40px; line-height: 30px; text-align:left; font-family: 'Myriad Pro', arial; font-size:14px; 
+
+}
+
+.trainingdivright{
+	width: 40%; float:right; padding-top:30px; padding-right: 40px; line-height: 30px; text-align:left; font-family: 'Myriad Pro', arial; font-size:14px; 
+	
+}
+.bgcolorgray
+{
+	background-color: #efefef;
+}
+
+.buynowdiv
+{
+float:right; background-color: #f6882f; padding-left:10px; padding-right:10px; color: #ffffff; font-family: 'Myriad Pro', arial; font-size:14px; padding-top:10px; padding-bottom:10px; margin-top:-60px !important; margin-right: 110px; text-decoration: none;
+}
+
+.buynowdiv2
+{
+float:right; background-color: #f6882f; padding-left:10px; padding-right:10px; color: #ffffff; font-family: 'Myriad Pro', arial; font-size:14px; padding-top:10px; padding-bottom:10px; margin-top:-52px !important; margin-right: 130px; text-decoration: none;
+}
+
+.buynowbtn
+{
+background-color: #f6882f; padding-left:20px; padding-right:20px; color: #ffffff; font-family: 'Myriad Pro', arial; font-size:14px; padding-top:10px; padding-bottom:10px; width: 40%; text-decoration: none; text-align: center; 
+}
+
+.learnmorebtn
+{
+background-color: #26a7e6; padding-left:20px; padding-right:20px; color: #ffffff; font-family: 'Myriad Pro', arial; font-size:14px; padding-top:10px; padding-bottom:10px; width: 40%; text-decoration: none; text-align: center; 
+}
+
+
+.addbuttonblue
+{
+background-color: #26a7e6; padding-left:25px; padding-right:25px; color: #ffffff; font-family: 'Myriad Pro', arial; font-size:14px; padding-top:6px; padding-bottom:6px;
+}
+
+
+.get_scrumdo_btn:hover{text-decoration:none;}
+
+
+/*
+ *  Header style
+ */
+#header
+{
+	height:142px;
+	background:#353535;
+}
+.logo_top
+{
+	display:inline-block;
+	margin-left:5px;
+	margin-top:43px;
+	margin-right:28px;	
+}
+#header .get_scrumdo_btn_holder
+{
+	width:206px;
+	padding-top:41px;
+	text-align:center;
+	line-height:10px;
+	color:#989898;
+	margin-right:8px;
+}
+
+/*
+ *  Main style
+ */
+#main
+{
+	background:#ffffff url(../images/main_bg.png) top repeat-x;
+}
+
+#black {height:230px;width:90%;border:0px solid #000000; margin-left: auto; margin-right: auto;}
+#black div{margin-top:10px;}
+.green {border:0px solid #009900; width:auto; float:left; margin-left: auto; margin-right: auto;}
+.red{border: 0px solid #FF0000; width:auto; float:right; margin-left: auto; margin-right: auto;}
+
+.lastbtndiv {border:0px solid #009900; width:50%; float:left; margin-left: auto; margin-right: auto;}
+
+
+
+.bigbluefont{
+
+	font-family: "Myriad Pro",arial;
+	font-size: 30px;
+	color: #26a7e6;
+	
+}
+.grayfontsupersmall
+{
+	font-family: "Myriad Pro",arial;
+	font-size: 10px;
+	color: #717171;
+	
+}
+
+#blackbig {height:810px; width:992px;border:0px solid #000000;}
+#blackbig div{margin-top:5px;}
+.greenbig {border:0px solid #009900; width:650px; float:left;margin-left:5px;}
+.redbig{border: 0px solid #FF0000; width:270px; height: 680px; float:right;margin-right:5px; background-color: #f1f2f3; -moz-border-radius-bottomright: 10px;
+-moz-border-radius-bottomleft: 10px; -webkit-border-bottom-left-radius: 10px; -webkit-border-bottom-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;}
+
+.font12px
+{
+	font-size: 12px;
+}
+
+.font14px
+{
+	font-size: 14px;
+}
+
+.blueclass
+{
+	color:#26a7e6;
+
+}
+
+.quote
+{
+	margin-top: 50px;
+}
+
+.addthis_toolbox{padding-top:27px;}
+.addthis_toolbox a{/*display:inline-block; margin-right:20px;*/ min-width:100px;}
+
+.row .featured_content .content{position:relative; padding:30px 0px;}
+.row .featured_content .hr{width:890px; height:1px; margin:0 auto; background:#e5e5e5;}
+
+.tableheadtext
+{
+ 	font-family: arial, sans-serif;
+ 	font-size: 10px;
+ 	text-transform:uppercase;
+ 	font-weight: bold;
+ 	color: #fff;	
+ 	padding-left: 0px;
+}
+
+.paddinglft15px
+{
+ 	padding-left: 25px;
+}
+.paddinglft5px
+{
+	padding-left: 5px;
+}
+.tablesubtextgray
+{
+	font-family: arial, sans-serif;
+ 	font-size: 12px;
+ 	color: #6a6a6a;	
+ 	/*padding-left: 10px;*/
+ 	background-color: #f1f2f3;
+ 	padding-top: 8px;
+ 	padding-bottom: 8px;
+
+}
+
+.tablesubtextwhitebg
+{
+	font-family: arial, sans-serif;
+ 	font-size: 12px;
+ 	color: #6a6a6a;	
+ 	/*padding-left: 10px;*/
+ 	background-color: #ffffff;
+ 	padding-top: 8px;
+ 	padding-bottom: 8px;
+
+}
+.paddingleft10px
+{
+	padding-left: 10px;
+}
+
+.paddingright12px
+{
+	padding-right: 12px;
+}
+
+.alignleftpad10px
+{
+	padding-left: 10px;
+}
+
+.table_header{position:relative; background:#26a7e6; height:49px; padding-top:0px; padding-bottom: 0px; padding-left: 7px; padding-right: 7px; font-size:12px; font-weight:400; color:#ffffff; z-index:12;}
+.table_header img{margin-right:7px; margin-left:10px; margin-top:-3px;}
+.table_special_bg
+{
+	position:relative;
+	width:675px; 
+	height:51px; 
+	margin-left:-15px; 
+	margin-top:4px; 
+	background:url(../images/scrumbg.png) no-repeat;	
+	color:#ffffff;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
+	font-size:13px !important;
+	font-weight:400;
+	/*text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.16);*/
+	z-index:10;
+}
+
+.table_special_bgbig
+{
+	position:relative;
+	width:1015px; 
+	height:55px; 
+	margin-left:-15px; 
+	margin-top:4px; 
+	background:url(../images/scrumtblbg.png) no-repeat;	
+	color:#ffffff;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
+	font-size:13px !important;
+	font-weight:400;
+	/*text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.16);*/
+	z-index:10;
+}
+.table_v_line{ width:1px; height:100%; position:absolute; top:0px; left:155px; background:#eaeaea; z-index:11;}
+.box_shadow
+{
+	-webkit-box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow:    0px 4px 7px rgba(0, 0, 0, 0.3);
+	box-shadow:         0px 4px 7px rgba(0, 0, 0, 0.3);
+	border-collapse:separate;
+}
+
+/* Testimonial Slider: CSS */
+.example_text {
+    text-align: left;
+    background-color: #f1f2f3;
+    -moz-border-radius: 15px;
+	border-radius: 15px;
+	font-family: 'Arial','Montserrat', sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 28px;
+}
+    .example_text .ocarousel_window {
+        height: 270px;
+        width: 260px;
+        margin: 0 auto;
+        padding: 0;
+    }
+        .example_text .ocarousel_window_slides div {
+            width: 260px;
+            height: 300px;
+        }
+
+
+
+/* Applications Slider CSS */
+
+.bx-wrapper .testimonials-thumbnail{ margin: 0px 0px 15px; }
+.bx-wrapper .testimonials-title{ text-align: center;  margin: 25px 15px 3px; font-size: 24px; line-height: 1; }
+.bx-wrapper .testimonials-carousel-thumbnail{ max-width: 35%; float: left; margin-right: 20px; }
+.bx-wrapper .testimonials-carousel-thumbnail img{ display: block;   margin-right: 20px; margin-top: 5px;}
+.bx-wrapper .testimonials-carousel-context{ overflow: hidden; }
+.bx-wrapper .testimonials-name{ font-size: 18px; margin-bottom: 15px; color:#000000; font-weight:400;}
+.bx-wrapper span{ font-size: 11px; margin-left:10px; color:#aaa; font-family: Georgia, Arial, Helvetica, sans-serif; font-style:italic; }
+.bx-wrapper {position: relative;margin: 10px auto;padding: 0;width:100%;*zoom: 1;}
+.bx-wrapper .slide {padding-top:0;margin:0;display: block;}
+.bx-wrapper .bx-viewport {padding:0px;margin-left:0;z-index:1;width:100%;}
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {position: absolute;display:none;bottom: -30px;width: 100%;}
+.bx-wrapper .bx-loading {min-height: 50px;background: url(images/bx_loader.gif) center center no-repeat #fff;height: 100%;width: 100%;position: absolute;top: 0;left: 0;z-index: 2000;}
+.bx-wrapper .bx-pager {text-align: center;font-size: .85em;font-weight: bold;color: #666;padding-top: 20px;}
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {display: inline-block;*zoom: 1;*display: inline;}
+.bx-wrapper .bx-pager.bx-default-pager a {background: #666;text-indent: -9999px;display: block;width: 10px;height: 10px;margin: 0 5px;outline: 0;-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 5px;}
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {background: #000;}
+.bx-wrapper .bx-next {position: absolute;top: 0;right: 0;width: 30px;border-left:0px solid #ddd;height: 30px;cursor: pointer; background: url(../images/arrowright.png) no-repeat 0 0 ;}
+.bx-wrapper .bx-prev {position: absolute;top: 0px;right: 30px;border-right:0px solid #ddd;width: 30px;height: 30px;cursor: pointer;background: url(../images/arrowleft.png) no-repeat 0 0 ;}
+.bx-wrapper .bx-controls-direction a {position: absolute;top: 0;margin-top: -55px;margin-right: 0px;outline: 0;width: 30px;height: 30px;text-indent: -9999px;z-index: 9999;}
+
+.appdesc
+{
+	font-family: arial, sans-serif;
+ 	font-size: 14px;
+ 	color: #6a6a6a;
+ 	line-height: 23px;	
+ 	margin-top: -10px;
+ 	/*padding-left: 10px;*/
+}
+
+.appReadMoreblue
+{
+	font-family: arial, sans-serif;
+ 	font-size: 12px;
+ 	color: #26a7e6;
+}
+
+ul
+{
+	padding: 0px;
+	font-family: arial,sans-serif;
+	font-size: 13px;
+	line-height: 25px;
+	
+}
+.muchmore
+{
+	font-family: arial,sans-serif;
+	font-size: 15px;
+	color: #26a7e6;
+	font-weight: bold;
+	text-decoration: none;
+	
+}
+.graybg
+{
+	background-color: #f1f2f3;
+	width: 100%;
+}
+
+.featurecol1 {
+    float: left;
+    width: 30.3%;
+    height: 600px;
+    border-right: 0px solid #e5e5e5;
+	padding-left: 20px;
+    padding-right: 20px; 
+
+}
+.featurecol2 {
+    float: none;
+    height: 600px;
+    overflow: hidden;
+    width: 30.3%;
+    padding-left: 20px;
+    padding-right: 20px;
+    display:table-cell; /* turn this off to lock height at 65px */
+}
+.featurecol3 {
+    float: right;
+    width: 30.3%;
+    border-left: 1px solid #e5e5e5;
+    margin-top:40px;
+	height: 500px;
+	    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.paddingTop25px
+{
+	padding-top: 25px;
+}
+
+
+.centerhead
+{
+text-align: center;
+
+}
+/*
+ *  Footer style
+ */
+#footer
+{
+	height:42px;
+	line-height:42px;
+	background:#323232 url(images/footer_bg.png) top repeat-x;
+	font-family: 'Montserrat', Arial, sans-serif;	
+	font-weight:400;
+	font-style:normal;
+}
+#footer a, #footer span{text-decoration:none; color:#dddddd; font-size:11px;}
+#footer a:hover{text-decoration:underline;}
+#footer .floatLeft a{margin-right:15px;}
+#footer .floatRight a, #footer .floatRight span{margin-left:15px;}
+
+.posRel{position:relative;}
+.posAbs{position:absolute;}
+
+.floatLeft{float:left;}
+.floatRight{float:right;}
+.clearBoth{clear:both;}
+
+
+.displayNone{display:none;}
+
+.lineHeight24px{line-height:24px;}
+.lineHeight28px{line-height:28px;}
+.lineHeight35px{line-height:35px;}
+.bold{font-weight:bold;}
+
+.color_6a6a6a{color:#6a6a6a;}
+.color_414040{color:#414040;}
+
+.width700px{width:700px;}
+
+.padding0{padding:0px !important;}
+
+.paddingLeft17px{padding-left:17px;}
+
+.paddingRight17px{padding-right:17px;}
+
+.paddingTop20px{padding-top:20px;}
+.paddingTop27px{padding-top:27px;}
+.paddingTop40px{padding-top:40px;}
+
+.paddingBottom20px{padding-bottom:20px;}
+
+.margin_0_auto{margin:0 auto;}
+.marginTop15px{margin-top:15px;}
+</style>
+<script type="text/javascript">
+         $(document).ready(function () {          
+             $('.bxslider').bxSlider({
+                 mode: 'vertical',
+                 slideMargin: 3,
+                 auto:true
+             });            
+         });
+
+    </script>
+
+</head>
+<body>
+	<div id="header">
+    	<div class="wrapper">            
+        	<div class="floatLeft">
+            	<a class="logo_top" href="/">
+                	<img src="http://cdn2.scrumdo.com/static/v50/scrumdo/landing/images/logo_top.png" width="205" height="40" border="0" />
+                </a>
+            	<img src="http://cdn2.scrumdo.com/static/v50/scrumdo/landing/images/man_with_tie.png" width="97" height="142" border="0" />
+            </div>
+            <!--<div class="floatRight get_scrumdo_btn_holder">
+            	<a href="/account/signup/" class="btn btn-success btn-success-iefix">Get ScrumDo</a>
+                <br/>
+                <h6>30 Days Trial Free!</h6>
+            </div>-->
+            <div class="clearBoth"></div>
+        </div>
+    </div>
+	<!-- #header ends -->    
+    
+    <!-- Main Area Starts -->
+    
+    <div id="main">
+		<div class="wrapper">
+			<div>
+				<div>
+					<img src="images/bannersmall.jpg" border="0" alt="New For 2014" width="100%">
+				</div>
+			</div>
+			<div class="row">
+				<div class="paddingTop40px sitefontmedium">
+					Although Scrum is a simple framework, optimizing its practice is an ongoing process that requires hard work.  Things that seem simple at first often require new ways of thinking that aren't always obvious to those in the thick of things.
+                    
+                    Recognizing this, we've teamed with our sister company (Code Genesys) to design a series of low-cost, high value mini-workshop &amp; coaching programs.  These programs help managers and teams more effectively apply core practices and principles within their own environments.  
+                    
+                    Our accredited coaches / trainers have helped many teams and organization achieve significant and sustainable gains in productivity, efficiency and quality.  ScrumDo -- more than just a tool.  	
+				</div>
+			</div>
+			<!--Testimonials Start-->
+			
+ <div class="paddingTop40px" style="width:95%;margin-left:20px;">
+ <div style="text-align:center;"><h3>Trusted by Top Companies and Universities</h3> <div class="borderbottom1px"></div></div>
+  <ul class="bxslider">
+   <li>
+    <blockquote>[Our coach] did an exceptional job coaching a variety of our Enterprise Data Services delivery teams at Capital One. Coaching some of our most diverse, culturally hardened, distributed and challenging teams, he produced steady, consistent, and successful outcomes that were tangible and verified.
+    <p style="text-align:right;margin-right:20px;">– David Bean, Senior Manager (Capital One), March 2013</p><br></blockquote>
+    </li>
+    <li><blockquote>Our coach had a unique ability to communicate with various audiences and provide constructive and actionable feedback that leads to positive change. Right from the beginning he was asked to take on a very difficult project with multiple product owners and did an outstanding job of getting them to work together
+and get a new Agile project up and running.
+  <p style="text-align:right;margin-right:20px;">– Jason Lewis, Vice President (State Street Bank), July 2013</p><br></blockquote></li>
+  </ul>
+ </div>
+ <!--Testimonials End-->
+			<div class="row" style="overflow:hidden;">
+				<div class="sitefonthead">
+					<h2>Custom Training - Mini-Workshops</h2>
+					<div class="borderbottom1px"></div>
+				</div>
+				<div class="trainingdivleft">
+					<h3>Scrum Team Kickstart: Starting off on the Right Foot with Scrum</h3>
+<br>Our Scrum Team Kickstart is half-day workshop especially designed to help new teams avoid common traps and pitfalls when first adopting the Scrum framework. 
+                    
+                    The most successful teams and organizations invest in acquiring knowledge that is crucial to their success, and this low-cost workshop provides an outstanding ROI. 
+                    
+                    By the end of the workshop, participants will have gained a pragmatic understanding of the Scrum framework. In short, teams will acquire an 
+improved ability to focus on building the right product instead of building the product right. 
+                    
+Specific topics covered include:
+<div class="row">
+				<div class="paddingTop20px listpadding" id="listitemstopics">
+					<ul>
+						<li>
+							Comparing and contrasting traditional development approaches with Agile
+						</li>
+						<li>
+							Understanding the roles, events, artifacts, and rules of Scrum
+
+						</li>
+						<li>
+							Effectively conducting iterative planning and development with Scrum / Kanban / XP
+						</li>
+						<li>
+							Creating, ordering, and grooming the product backlog, Writing, slicing, and sizing user stories
+						</li>
+						<li>
+							Working with a Definition of Ready (DoR) and a Definition of Done (DoD)
+						</li>
+						<li>
+							Planning and tracking releases / sprints
+						</li>
+						<li>
+							Visualizing progress with taskboards, burndowns, and burnups, Understanding team velocity and role metrics
+						</li>
+						<li>
+							Team estimating using planning poker techniques
+						</li>
+						<li>
+							Conducting effective standups, sprint planning, sprint reviews, and retrospectives 
+						</li>
+					</ul>
+					<form name="Scurmform" method = "post" action = "https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx"> <input type = "hidden" name = "LinkId" value ="d9f220b2-7e6a-4801-b2e4-5f012683a742" /> </form>	
+					<br><b>4 Hour On-line, Interactive Workshop for up to 8 team members </b>				
+					<div style="width:350px; margin-left:auto; margin-right:auto; text-align:center;">
+						<p style="text-align:center; border-right: 1px solid #ddd; width:40%;"><span class="bigbluefont">Just $499</span></p>
+
+							<div class="buynowdiv">
+
+								<a onclick="Scurmform.submit();" style="color:#fff; text-decoration: none;">BUY NOW</a>	
+
+								
+							</div>
+					</div>
+
+				</div>
+			</div>	
+				</div>
+
+				<div class="trainingdivright">
+				<form name="KanbanForm" method = "post" action = "https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx"> <input type = "hidden" name = "LinkId" value ="8277dbc2-26ce-47e9-9aaf-fc1411031399" /> 
+<h3>Scrumban Kickstart - Applying Scrumban to Optimize Lean Agility</h3>
+					
+<br>This workshop is for teams that are already practicing Scrum and want to accelerate their progress towards becoming lean, agile machines!  
+
+For every organization that has adopted Scrum, you can be certain it has also created its own unique adaptations. The Kanban Method recognizes this, and believes unique situations deserve the opportunity to further develop and refine their own process definitions -- definitions optimized to their domain, their workflow, the risks they manages, the skills of their teams, and the demands of their customers. [ <a href="">read more about Scrumban</a> ]
+
+In this workshop, participants will learn how to apply principles of Scrumban to optimize your Scrum environment, and how to best use ScrumDo's special features and functionality to this purpose.
+
+By the end of the workshop, the participating team will be able to:				
+<div class="row">
+				<div class="paddingTop20px listpadding" id="listitemstopics">
+					<ul>
+						<li>
+							Understand the differences between time boxed project and flow based projects
+						</li>
+						<li>
+							Visualize its ongoing work.
+						</li>
+						<li>
+							Visualize its current workflow (the way it works).
+
+						</li>
+						<li>
+							Familirize with commonly used practiced in flow based projects
+						</li>
+						<li>
+							Visualize its current policies (socially enforced principles that govern how it works).
+						</li>
+						<li>
+							Understand the use of Flow based metrics like Cumulative Flow Diagram, Flow Efficiency and Lead Time histograms
+						</li>
+					</ul>
+					
+			These outcomes will begin providing the team with enough information to understand it's current state, improve its Scrum going forward. 
+			
+			<br/><br/><b>4 Hour On-line, Interactive Workshop for up to 8 team members</b>
+					<div style="width:350px; margin-left:auto; margin-right:auto; text-align:center;">
+						<p style="text-align:center; border-right: 1px solid #ddd; width:40%;"><span class="bigbluefont">Just $499</span></p>
+							<div class="buynowdiv">
+
+								<a onclick="KanbanForm.submit();" style="color:#fff; text-decoration: none;">BUY NOW</a>	
+
+								
+							</div>
+					</div>
+				</div>
+			</div>
+
+</div>
+				
+			</div>
+			
+
+			            
+		    <div class="paddingTop20px"></div>
+		</div>
+	</div>
+	
+	    <div class="clearBoth"></div>
+    
+    <!-- Main Area Ends -->
+	
+	<!-- #footer starts -->
+	<div id="footer">
+    	<div class="wrapper">
+        	<div class="row">
+            	<div class="posRel">
+                    <div class="floatRight">
+                         <a href="http://www.scrumdo.com/about/terms/">Terms of Use</a> <a href="http://content.scrumdo.com/privacy-policy.html">Privacy Policy</a> <span>&copy; 2014 ScrumDo</span>
+                    </div>
+                    <div class="clearBoth"></div>
+            	</div>
+            </div>
+        </div>
+    </div>
+    
+	<!-- #footer ends -->
+
+        <script type="text/javascript">
+	      var _gaq = _gaq || [];
+	      _gaq.push(['_setAccount', 'UA-19817142-1']);
+	      _gaq.push(['_trackPageview']);
+
+	      (function() {
+	        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	      })();
+	      var google_conversion_id = 1021662849;
+	      var google_custom_params = window.google_tag_params;
+	      var google_remarketing_only = true;
+	  </script>
+
+	  <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+	  <noscript>
+	    <div style="display:inline;">
+	    <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1021662849/?value=0&amp;guid=ON&amp;script=0"/>
+	    </div>
+	  </noscript>
+
+
+</body>
+</html>

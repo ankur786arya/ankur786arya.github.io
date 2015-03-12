@@ -1,0 +1,15 @@
+/* Third Example: Text */
+.example_text {
+    text-align: left;
+}
+    .example_text .ocarousel_window {
+        height: 300px;
+        width: 300px;
+        margin: 0 auto;
+        padding: 0;
+    }
+        .example_text .ocarousel_window_slides div {
+            width: 300px;
+            height: 300px;
+        }
+
