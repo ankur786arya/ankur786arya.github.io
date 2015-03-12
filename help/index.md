@@ -2,6 +2,7 @@
 layout: default
 title: ScrumDo - Help
 bodyclass: guide index
+pageid: help
 ---
 
 

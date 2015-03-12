@@ -71,12 +71,12 @@
           <nav role="navigation" class="nav-collapse">
             <ul class="nav">
               <!-- <li><a href="/invasion/">Invasion!</a></li> -->
-              <li><a href="/features/">Features</a></li>
-              <li><a href="/help/">Guides</a></li>
-              <li><a href="/blog/">Blog</a></li>
-              <li><a href="/community/">Community</a></li>
-              <li><a href="/modules/">Modules</a></li>
-              <li><a href="/support/">Support</a></li>
+              <li><a {% if page.pageid == "features" %}class="active"{% endif %} href="/features/">Features</a></li>
+              <li><a {% if page.pageid == "help" %}class="active"{% endif %} href="/help/">Guides</a></li>
+              <li><a {% if page.pageid == "blog" %}class="active"{% endif %} href="/blog/">Blog</a></li>
+              <li><a {% if page.pageid == "community" %}class="active"{% endif %} href="/community/">Community</a></li>
+              <li><a {% if page.pageid == "modules" %}class="active"{% endif %} href="/modules/">Modules</a></li>
+              <li><a {% if page.pageid == "support" %}class="active"{% endif %} href="/support/">Support</a></li>
             </ul>
           </nav>
         </div>

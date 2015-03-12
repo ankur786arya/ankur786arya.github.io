@@ -1,7 +1,8 @@
 ---
 layout: default
-title: ScrumDo - Some sub title
+title: ScrumDo - Home
 bodyclass: home
+pageid: home
 ---
 
 <header role="intro" id="intro">
