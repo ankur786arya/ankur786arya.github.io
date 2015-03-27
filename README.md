@@ -1,2 +1,0 @@
-scrumdo-static
-==============
