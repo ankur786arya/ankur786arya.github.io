@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="GetScrumban Game">
+    <meta name="author" content="Ajay Reddy">
+
+    <title>GetScrumban - A game for helping Scrum teams maximize their potential</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="homepage/css/bootstrap.css" rel="stylesheet">
+    <!-- Theme CSS --> 
+    <link href="homepage/css/one-page-base.css" rel="stylesheet">
+    <link href="homepage/css/act.css" rel="stylesheet">
+    <!-- Plugins & Assets-->
+    <link href="homepage/css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="homepage/css/hover-effects.css" />
+    <link rel="stylesheet" href="homepage/plugins/prettyPhoto_uncompressed_3.1.5/css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href=".//homepage/plugins/bootstrap-datetimepicker-master/build/css/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" href="homepage/plugins/tinyscrollbar-master/examples/simple/tinyscrollbar.css" type="text/css" media="screen"/>
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+    <link href="homepage/font-awesome-4.1.0/css/font-awesome.css" rel="stylesheet" type="text/css">
+
+    <link rel="prefetch" href="{{ STATIC_URL }}dart/getscrumbangame/web/gamesummary.dart.js">
+    <link rel="prefetch" href="{{ STATIC_URL }}dart/getscrumbangame/web/getscrumbangame.dart.js">
+    <link rel="prefetch" href="{{ STATIC_URL }}dart/getscrumbangame/web/traineroverview.dart.js">
+
+
+    <!--  New style definitions for ScrumDo Updates  -->
+    <style>
+        img.homeImage{
+          float: left;
+          margin: 0 auto 15px 25px;
+          width: 25%;
+        }
+        img.strip {
+          display: block;
+          margin: 0 auto 15px auto;
+          width: 50%;
+        }
+    </style>
+
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({onhover: false, publisher: "e9737d65-40fd-48cf-b61c-af697d636f38", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- preloader -->
+    <div id="preloader-wrapper">
+        <div class="preloader">
+              &nbsp;
+        </div>
+    </div><!-- / preloader -->
+        
+    	
+    <!--=== NAVIGATION ===-->  
+      <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+          <div class="container-wide">
+                  
+         
+              <a href="/"><img src="{{ STATIC_URL }}/homepage/img/GetScrumban_logo_home.png" alt="logo"  ></a>
+                  
+  
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                  <ul class="nav navbar-nav">
+                      <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                          <li class="first"><a href="#home" class="hidden-li"></a></li>
+
+                          <li class="page-scroll">
+                              <a href="#tutorials">Tutorials</a>
+                          </li>
+
+                          <li class="page-scroll">
+                              <a href="#publications">Publications</a>
+                          </li>
+                      
+                          <li class="page-scroll">
+                              <a href="http://getscrumban.com/" >Game</a>
+                          </li>
+
+                          <li class="page-scroll">
+                              <a href="#resources">Resources</a>
+                          </li>
+
+                          <!-- li><a href="{% url "auth:login" %}">Login</a></li -->
+
+                  </ul>
+                   <!-- navbar donation button -->
+                   <div id="donate-homepage" class="donate bg-brand-tertiary pull-right">
+                          <a  href="{% url 'register' %}" data-toggle="modal" role="button">Play Game</a>
+                  </div>
+              </div>
+              <!-- /.navbar-collapse -->
+          </div>
+          <!-- /.container -->
+      </nav><!--=== END Navigation ===-->  
+
+    <!--=== INFO modal ===-->
+
+ <div class="modal fade" id="infoModal" style="overflow:visible!important">
+     <div class="modal-dialog modal-lg text-center">    
+         <div class="modal-content">        
+             <div class="modal-body">
+            
+                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span>
+                     <span class="sr-only">Close</span></button>
+                
+                 <h1>Scrumban Demystified</h1>
+                
+                 <div class="accent-rule-short"></div>
+                
+                 <h2>It's probably not what you think...</h2>
+                
+                 <div style="text-align: center; float: left; margin: 0 15px 8px 0; width: 350px;"><iframe
+                 src="//player.vimeo.com/video/102353798?title=0&amp;byline=0&amp;portrait=0"
+                 width="350" height="200" frameborder="0" webkitallowfullscreen mozallowfullscreen
+                 allowfullscreen></iframe> 
+                 <p style="font-size: small; font-style: italic;">GetScrumban Game Intro</p>
+                 </div>       
+                                
+                 <p style="text-align: left; font-size: small; margin: 0 0 8px 0;">
+                 Scrum is an incredibly simple, effective and highly-popular software development
+                 framework. Despite its simplicity, Scrum can be difficult to master.
+                 </p>
+                
+                 <p style="text-align: left; font-size: small; margin: 5px 0 8px 0;">
+                 Scrumban is also a simple framework, but is widely misunderstood. Some believe it to
+                 be a new software development framework that combines “the best” elements of Scrum and
+                 Kanban. Others believe it to be using kanban systems inside of Scrum. Others have yet different
+                 understandings.
+                 </p>
+                
+                 <p style="text-align: left; font-size: small; margin: 5px 0 8px 0;">
+                 Scrumban is an easy-to-use framework of complementary tools and capabilities for
+                 Scrum. It can be used to accelerate new adoptions, to help overcome common pitfalls &amp;
+                 challenges, or to evolve a new framework that sustains value-delivery and agility over time.
+                 </p>
+                
+                 <p style="text-align: left; font-size: small; margin: 5px 0 0 0;">
+                 The GetScrumban game lets you experience how Scrumban can help amplify
+                 capabilities, overcome common challenges, and forge alternative paths to agility.
+                 </p>
+                
+                 <br>
+                
+                 <button type="button" class="btn btn-tertiary btn-xl btn-rounded-edge" data-dismiss="modal">Continue</button>
+                
+                 <br>            
+             </div>        
+         </div><!-- / modal-content -->    
+     </div><!-- / modal-dialog -->
+ </div><!--=== / END donate modal ===-->
+
+      <!--=== INTRO ===-->  
+      <header id="home" class="intro">
+          <div class="overlay-dark">
+              <div class="intro-body">
+                  <div class="row">
+                      <div class="col-md-12">
+                          
+                          <!-- carousel container-->
+                          <div class="carousel-wrapper">
+                              <!-- carousel -->
+                                  <div class="carousel slide carousel-fade">
+                                        <div class="carousel-inner">   
+                                             <!-- item 1  -->
+                                             <div class="item active">                                                         
+                                                  <span class="text-big">Learn How<br />To Amplify Scrum</span><br>
+                                                  <a href="#infoModal" data-toggle="modal" role="button"><button class="btn btn-outline btn-xl">What's Scrumban?</button></a>
+                                                  <a style="margin-left: 20px;" href="{% url 'register' %}" role="button"><button class="btn btn-outline btn-xl">Sign Up and Play</button></a>
+                                            </div><!-- /end item 1  -->  
+                                            
+                                            <!-- item 2  -->
+                                            <div class="item">       
+                                                  <span class="text-big">Learn How to<br />Overcome Common Challenges</span><br>
+                                                  <a  href="#infoModal" data-toggle="modal" role="button"><button class="btn btn-outline btn-xl">What's Scrumban?</button></a>
+                                                <a style="margin-left: 20px;" href="{% url 'register' %}" role="button"><button class="btn btn-outline btn-xl">Sign Up and Play</button></a>
+                                            </div><!-- /end item 2  -->
+                                            
+                                            <!-- item 3  -->
+                                            <div class="item">       
+                                                  <span class="text-big">Learn Alternative<br />Paths to Agility</span><br>
+                                                  <a  href="#infoModal" data-toggle="modal" role="button"><button class="btn btn-outline btn-xl">What's Scrumban?</button></a>
+                                                <a style="margin-left: 20px;" href="{% url 'register' %}" role="button"><button class="btn btn-outline btn-xl">Sign Up and Play</button></a>
+                                            </div>
+                                            <!-- /end item 3  -->
+                                      </div>
+                                </div><!-- /end carousel  -->
+                          </div><!-- /end carousel container-->
+                        </div>
+                    </div>
+              
+                   <!-- leader board -->
+                   <div id="fundraiser-bar" class="bottom-bar-responsive bg-brand-secondary-darkest">
+                          <!-- progress bar --> 
+                          <div class="col-md-6 fundraiser-progress-bar animated-longer-delay-3 fadeIn">
+                               <div class="vert-centered-wrapper-120px"><!-- height set in one-page-base.css -->
+                                  <div class="vert-centered">
+                                      <div class="progress">
+                                            <div class="progress-bar progress-bar-tertiary" role="progressbar"  style="width:60%;">
+                                              <h3><span class="responsive-hide">Median Score</span> &nbsp;<b>$16,000</b></h3>
+                                            </div>
+                                            <h3 class="goal"><span class="responsive-hide">Target Score</span> <b>$28,000</b></h3>
+                                       </div>
+                                  </div>
+                               </div>
+                          </div><!-- /end progress bar --> 
+                          <!-- leaderboard stats --> 
+                          <div class="col-md-4 col-sm-9 col-xs-12 fundraiser-stats">
+                              <div class="col-md-4 col-sm-4  col-xs-4 animated-longer-delay-7 fadeIn">
+                                  <div class="vert-centered-wrapper-120px"><!-- height set in one-page-base.css -->
+                                      <div class="vert-centered">	
+                                          <h2><span class="timer" data-to="50" >50</span></h2>
+                                          <h4>Game Days</h4>
+                                      </div>
+                                   </div>
+                              </div>
+                              <div class="col-md-4 col-sm-4 col-xs-4 animated-longer-delay-8 fadeIn">
+                                  <div class="vert-centered-wrapper-120px"><!-- height set in one-page-base.css -->
+                                      <div class="vert-centered">	
+                                          <h2><span class="timer" data-to="5" data-speed="1000">5</span></h2>
+                                          <h4>Ave. # Features</h4>
+                                      </div>
+                                   </div>
+                              </div>
+                              <div class="col-md-4 col-sm-4 col-xs-4 animated-longer-delay-9 fadeIn end">
+                                  <div class="vert-centered-wrapper-120px"><!-- height set in one-page-base.css -->
+                                      <div class="vert-centered">	
+                                          <h2><span class="timer" data-to="80" data-speed="2500">80</span> <span style="font-size: small;">mins</span></h2>
+                                          <h4>Ave. Game Time</h4>
+                                      </div>
+                                   </div>
+                              </div><div class="clearfix"></div>
+                          </div><!-- /end leader board stats --> 
+                       
+                          <!-- play game --> 
+                          <div class="col-md-2 col-sm-3 col-xs-12  make-a-donation  animated-longer-delay-10 fadeIn">
+                              <div class="vert-centered-wrapper-120px"><!-- height set in one-page-base.css -->
+                                   <div class="vert-centered">	
+                                      <a href="http://www.getscrumban.com/game/leaderboard/" class="btn btn-primary btn-lg btn-rounded-edge btn-extra-padding">View Leaderboard</a>
+                                   </div>
+                              </div>
+                          </div><!-- /end play game --> 
+                    </div><!-- /end lead board -->    
+                </div>
+            </div>
+        </header><!--=== END intro ===-->  
+
+
+
+        <!--=== PROCESS ===--> 
+        <section id="process" class="bg-brand-warning-med">
+            <div class="col-lg-4 col-md-4 bg-brand-warning">
+                <div class="responsive-hide">
+                    <div class="triangle-right wow animated-longer-delay-3 fadeIn"><span class="text-big"><i class="fa fa-caret-right text-warning"></i></span></div>
+                </div>
+                <div class="col-lg-12 col-md-12 inner-container-small wow animated fadeIn" data-wow-offset="10">
+                    <div class="pull-left icon-circle-md">
+                        <button class="btn-circle btn-white"><i class="fa fa-file-text fa-2x"></i></button>
+                    </div>
+                    <div class="col-lg-9 col-md-9">
+                        <h2>More About Scrumban</h2>
+                        <p> Scrumban.io publishes content on cutting-edge practices, capabilities, and traps for the unwary.<br><br>
+                        <a href="http://scrumban.io"><button class="btn btn-black btn-sm">Visit Scrumban.io</button></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 bg-brand-warning-med">
+                <div class="responsive-hide">
+                    <div class="triangle-right wow animated-longer-delay-5 fadeIn"><span class="text-big"><i class="fa fa-caret-right text-warning-darker"></i></span></div>
+                </div>
+                <div class="col-lg-12 col-md-12 inner-container-small wow animated-longer-delay-3 fadeIn" data-wow-offset="10">
+                    <div class="pull-left icon-circle-md">
+                        <button class="btn-circle btn-white"><i class="fa fa-gamepad fa-2x"></i></button>
+                    </div>
+                    <div class="col-lg-9 col-md-9">
+                        <h2>Have a Game Code?</h2>
+                        <p>Has your employer or trainer provided you with a game code? Click on the button below to join your game.<br><br>
+                        <a href="http://getscrumban.com/game/play/enter_code"><button class="btn btn-black btn-sm">Join Game</button></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 bg-brand-warning-darker">
+                <div class="col-lg-12 col-md-12 inner-container-small wow animated-longer-delay-5 fadeIn" data-wow-offset="10">
+                    <div class="pull-left icon-circle-md">
+                        <button class="btn-circle btn-white"><i class="fa fa-globe fa-2x"></i></button>
+                    </div>
+                    <div class="col-lg-9 col-md-9">
+                        <h2>Try ScrumDo</h2>
+                        <p>Start using a project management &amp; collaboration tool that seamlessly integrates Scrumban capabilities with traditional Scrum artifacts &amp; events.<br><br>
+                        <a href="http://scrumdo.com"><button class="btn btn-black btn-sm">Try ScrumDo</button></a>
+                        </p>
+                    </div>
+                </div>
+            </div><div class="clearfix"></div>
+         </section><!--=== / END process  ===-->
+
+
+
+       <!--=== The GAME ===-->
+       <section id="thegame" class="bg-white">
+          <div class="inner-container">
+              <!-- section header -->
+              <div class="row text-center">
+                  <div class="col-lg-12 col-sm-12 wow animated fadeInDown">
+                      <h1 class="">The Get Scrumban Game</h1>
+                      <div class="accent-rule-short"></div>
+                      <h3>
+                          The Get Scrumban Game simulates a software development team that adopts <b>Scrumban</b> principles
+                          to deliver <b>higher quality</b> software more <b>predictably</b>.  While playing,
+                          you will <b>experience common problems</b> that software development teams have and see first-hand
+                          techniques that can be used to <b>solve them</b>.
+                      </h3>
+                  </div>
+              </div><!-- / end section header -->
+
+
+
+              <div class="row text-center row-after-a-row row-of-columns">
+                  <div class="col-lg-12 col-sm-12 wow animated fadeInDown">
+                      <h2>Some of the lessons you will learn:</h2>
+                  </div>
+              </div>
+
+              <div class="row row-after-a-row row-of-columns">
+                  <div class="col-lg-3 col-sm-6 text-center  wow animated-longer-delay-1 fadeIn">
+
+                      <h3>Visualize Value Streams</h3>
+                      <p>Learn different ways of visualizing how your work gets done and how to easily show stakeholders progress.</p>
+
+                  </div>
+                  <div class="col-lg-3 col-sm-6 text-center  wow animated-longer-delay-4 fadeIn">
+
+                      <h3>Classes of Service</h3>
+                      <p>
+                          See how defining policies around classes of service can help your development team be flexible to
+                          changing business needs.
+                      </p>
+
+                  </div>
+                  <div class="col-lg-3 col-sm-6 text-center  wow animated-longer-delay-5 fadeIn">
+
+                      <h3>Continuous Flow</h3>
+                      <p>
+                         Learn when Continuous Flow can help a team be more productive than a traditional fixed iteration, and
+                         see how to visualize metrics based on that flow.
+                      </p>
+
+                  </div>
+                  <div class="col-lg-3 col-sm-6 text-center  wow animated-longer-delay-6 fadeIn">
+
+                      <h3>Pull instead of Push</h3>
+                      <p>
+                          See what happens when your teams start pulling work to do instead of having it pushed upon them.
+                      </p>
+
+                  </div>
+              </div>
+          </div>
+
+
+          <div class="row text-center row-after-a-row row-of-columns">
+              <div class="col-lg-12 col-sm-12 wow animated fadeInDown">
+                   <a style="margin-bottom: 100px" class="btn btn-xl btn-primary" href="{% url 'register' %}">Sign Up and Play</a>
+              </div>
+          </div>
+
+
+         <div class="clearfix"></div>
+     </section><!--=== / END the GAME   ===-->
+
+
+          <!--=== Who Should Play Carousel ===-->
+       <section id="about" class="bg-brand-secondary-dark">
+          <div class="col-lg-12 inner-container text-center wow animated fadeInDown" data-wow-offset="10">
+              <h1>why play this Game?</h1>
+              <div class="accent-rule-short"></div>
+              <div class="vert-centered-wrapper-150px"><!-- height set in one-page-base.css -->
+                  <div class="vert-centered">
+                         <!-- carousel -->
+                          <div class="carousel slide carousel-fade" id="carousel_fade">
+                            <div class="carousel-inner">
+                                 <!-- item 1  -->
+                                 <div class="item active">
+                                      <h2>The GetScrumban Game allows players to experience how Scrumban brings new perspective &amp; capabilities to a Scrum context.</h2>
+                                </div><!-- /end item 1  -->
+                                 <!-- item 2  -->
+                                <div class="item ">
+                                     <h2>Scrum Team members &amp; trainers / coaches will benefit most, but managers &amp; execs also gain perspective from an improved understanding of the framework.</h2>
+                               </div><!-- /end item 2  -->
+                               <!-- item 3  -->
+                               <div class="item ">
+                                     <h2>This game is an ideal aid for quickly ramping up new teams and orienting new employees to the key principles underlying Scrumban.</h2>
+                               </div> <!-- /end item 3  -->
+                               <div class="item ">
+                                   <h2>Individuals don’t have to be co-located to play with and against one another during the SAME game sessions.</h2>
+                               </div> <!-- /end item 3  -->
+                            </div><!-- /end carousel-inner  -->
+                           <!-- controls -->
+                            <a class="left carousel-control carousel-control-wide" href="#carousel_fade" role="button" data-slide="prev">
+                              <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control carousel-control-wide" href="#carousel_fade" role="button" data-slide="next">
+                              <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                          </div> <!-- /end carousel  -->
+                      </div> <!-- /end vert centered inside wrapper -->
+                   </div> <!-- /end vert centered and animation wrapper -->
+               </div>
+          <div class="clearfix"></div>
+       </section><!--=== / END Who Should Play Carousel  ===-->
+
+
+        
+         <!--=== Coach's Corner ===-->
+         <section id="volunteer">
+         	<div class="overlay-dark">
+                    <div class="inner-container wow animated fadeIn pull-right ">
+                        <img style="float: left; margin: 0 10px auto 0;" src="{{ STATIC_URL }}/homepage/img/w7_large.png" />
+                        <h2 class="text-secondary-dark">Coach's Corner</h2>
+                        <h3>Meet Sanjay</h3>
+                        <span class="text-callout">“We've used Scrumban to help teams and organizations accelerate their transitions to Scrum from other development methodologies; to help teams and organizations overcome a variety of common challenges Scrum (purposefully) causes them to confront; and when the context has necessitated it, to help teams &amp; organizations evolve new Scrum-like processes and practices that work best for them.”
+                        </span>
+                        <!-- <br><br>
+                        <button class="btn btn-black">Play Now</button> -->
+                    </div>
+            </div><!-- /end overlay -->
+     	 </section><!--=== / END Coach's Corner  ===-->       
+       
+       <!--=== GET INVOLVED ===-->
+       <section id="join" class="bg-white">
+          <div class="inner-container">
+              <!-- section header -->
+              <div class="row text-center">
+                  <div class="col-lg-12 col-sm-12 wow animated fadeInDown">
+                      <h1 class="">Collaborate</h1>
+                      <div class="accent-rule-short"></div>
+                      <h2>Interested in connecting &amp; sharing experiences with a larger community? We'd love to hear from you! Check out the number of ways to get involved.</h2>
+                  </div>
+              </div><!-- / end section header -->
+              <div class="row row-after-a-row row-of-columns">
+                  <div class="col-lg-3 col-sm-6 text-center  wow animated-longer-delay-1 fadeIn">
+                      <button class="btn  btn-white text-big" data-toggle="modal" data-target="#joinModal1"><i class="text-primary fa fa-send"></i></button>
+                      <h3>Spread the Word</h3>
+                      <p>Tell others about Scrumban and how it can add more capabilities to existing Scrum frameworks.</p>
+                      <button  class="btn btn-black btn-sm st_email_large" >Share Info</button>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 text-center  wow animated-longer-delay-4 fadeIn">
+                      <button class="btn btn-white text-big text-primary" data-toggle="modal" data-target="#joinModal2"><i class="fa fa-graduation-cap"></i></button>
+                      <h3>Training Community</h3>
+                      <p>Want to hear about different ways the GetScrumban game can reinforce training concepts (or share some of your own)? Join our community of trainers.</p>
+                      <button class="btn btn-black btn-sm" data-toggle="modal" data-target="#joinModal2">Apply Now</button>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 text-center  wow animated-longer-delay-5 fadeIn">
+                      <button class="btn btn-white text-big text-primary" data-toggle="modal" data-target="#joinModal3"><i class="fa fa-calendar"></i></button>
+                      <h3>Share an Event</h3>
+                      <p>Are you speaking about Scrumban or leading a public workshop on Scrumban related topics?  Let us know so we can share it with the community.</p>
+                      <button class="btn btn-black btn-sm" data-toggle="modal" data-target="#joinModal3">Share an Event</button>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 text-center  wow animated-longer-delay-6 fadeIn">
+                      <button class="btn btn-white text-big text-primary" data-toggle="modal" data-target="#joinModal4"><i class="fa fa-globe"></i></button>
+                      <h3>Help us Improve</h3>
+                      <p>Have a great idea about how to improve the game or its educational experience? Let us know, and we'll consider adding it to the game.</p>
+                      <button class="btn btn-black btn-sm" data-toggle="modal" data-target="#joinModal4">Submit your Idea</button>
+                  </div>
+              </div>
+          </div>
+          
+          <!-- MODALS -->
+
+          <!-- modal 2 -->
+          <div class="modal fade" id="joinModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                  <h2 class="modal-title text-tertiary">Training Community</h2>
+                </div>
+                <div class="modal-body">
+                <p>Join our community of trainers and gain access to forums and other resources that can enhance your use of this game in workshops and other settings.</p>
+
+
+
+                <!-- Begin MailChimp Signup Form -->
+                <form class="form-horizontal" action="//getscrumban.us2.list-manage.com/subscribe/post?u=a18c900c76476ec5d6167521b&amp;id=f0fe8722ec" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="mce-EMAIL">Email Address</label>
+                        <div class="col-md-8">
+                            <input type="email" value="" name="EMAIL" class="required email form-control input-md" id="mce-EMAIL">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="mce-FNAME">First Name </label>
+                        <div class="col-md-8">
+                            <input type="text" value="" name="FNAME" class="form-control input-md" id="mce-FNAME">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="mce-LNAME">Last Name </label>
+                        <div class="col-md-8">
+                            <input type="text" value="" name="LNAME" class="form-control input-md" id="mce-LNAME">
+                        </div>
+                    </div>
+                    <div id="mce-responses" class="clear">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;"><input type="text" name="b_a18c900c76476ec5d6167521b_f0fe8722ec" tabindex="-1" value=""></div>
+
+
+                    <button id="submitbtn-4" class="field button btn btn-tertiary" value="send message" type="submit">Sign Up</button>
+                </form>
+                <!--End mc_embed_signup-->
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div><!-- modal 2 -->
+          <!-- modal 3 -->
+          <div class="modal fade" id="joinModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                  <h2 class="modal-title text-tertiary" id="myModalLabel">Share an Event</h2>
+                </div>
+                <div class="modal-body">
+                <p>Are you speaking about Scrumban or leading a public workshop on Scrumban related topics?  Let us know so we can share it with the community.</p>
+                <p>Just send us an email letting us know: <a href="mailto:game@getscrumban.com">game@getscrumban.com</a></p>
+                <p>We'll post appropriate events in our news section below and include them in newsletters going out.</p>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div><!-- modal 3 -->
+          <!-- modal 4 -->
+          <div class="modal fade" id="joinModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                  <h2 class="modal-title text-tertiary">Share your Idea</h2>
+                </div>
+                <div class="modal-body">
+
+
+
+                <form action="{% url 'djangovoice_submit' %}" method="post" class="form-horizontal" >
+                    {% csrf_token %}
+
+                        <div class="form-group ">
+                          <label class="col-md-4 control-label" for="id_title">Title</label>
+                          <div class="col-md-8">
+                            <input class="form-control input-md" id="id_title" maxlength="500" name="title" tabindex="1" type="text" />
+                          </div>
+                        </div>
+
+                        <div class="form-group ">
+                          <label class="col-md-4 control-label" for="id_description">Description</label>
+                          <div class="col-md-8">
+                            <textarea class="form-control input-md" cols="40" id="id_description" name="description" rows="10" tabindex="2">
+                            </textarea>
+                          </div>
+                        </div>
+
+                        <div class="form-group ">
+                          <label class="col-md-4 control-label" for="id_type">Type</label>
+                          <div class="col-md-8">
+                            <select class="form-control input-md" id="id_type" name="type" tabindex="3">
+                                <option value="" selected="selected">---------</option>
+                                <option value="1">Idea</option>
+                                <option value="2">Problem</option>
+                                <option value="3">Question</option>
+                                <option value="4">General</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="form-group ">
+                          <label class="col-md-4 control-label" for="id_email">E-mail</label>
+
+                          <div class="col-md-8">
+                            <input class="form-control input-md" id="id_email" maxlength="75" name="email" tabindex="4" type="email" />
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label"></label>
+                            <div class="col-md-8">
+                                <button type="submit" class="btn" tabindex="100">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div><!-- modal 4 --><!-- / end Modals -->
+         <div class="clearfix"></div>
+     </section><!--=== / END get involved   ===--> 
+         
+       
+        <!--=== GALLERY ===-->
+        <section id="tutorial">
+        <! -- section id="gallery" -->
+
+             <div class="col-lg-12 no-padding bg-white">
+                        <!-- Gallery-->
+                                <div id="effect-1" class="effects clearfix">
+                                           <div class="col-lg-4 col-sm-6 col-xs-12 bg-brand-tertiary wow animated fadeIn text-center"> 
+                                                <div class=" col-xs-12 float-over-top-center">
+                                                      <h1 class="text-uppercase">Game<br/>High Scores
+                                                      <span class="responsive-hide">
+                                                      	<i class="fa fa-caret-right transparent-30"></i>
+                                                      </span>
+                                                      </h1>
+                                                   
+                                                </div>
+                                                <img src="{{ STATIC_URL }}homepage/img/gal-spacer.png" alt="gallery" class="img-responsive" >
+                                           </div>
+                                           
+                                           <div class="img col-lg-4 col-sm-6 col-xs-12 tn wow animated-longer-delay-2 fadeIn">
+                                                <div class="gallery effects-container">
+                                                    <a href="{% url 'game_summary' games.0.key %}" title="{{ games.0.team_name }}"  data-gal="prettyPhoto[galleryName]">
+                                                    	<img src="{{ STATIC_URL }}homepage/img/HPGame1.png"/>
+                                                       	 <div class="overlay">
+                                                            <span><i class=" fa fa-chevron-right"></i></span>
+
+<a href="{% url 'game_summary' games.0.key %}" title="{{ games.0.team_name }}">
+                                                    	<img src="{{ STATIC_URL }}homepage/img/HPGame1.png"/></a>
+
+
+                                                         </div>
+
+
+                                                     </a>
+
+                                                </div>
+                                                     <div class="overlay-caption">
+                                                              <h3>
+                                                              Team "{{ games.0.team_name }}" <br/>  High Score:{{ games.0.score }}</h3>
+                                                            </div>
+                                           </div>
+                                           <div class="img col-lg-4 col-sm-6 col-xs-12 tn wow animated-longer-delay-2 fadeIn">
+                                                <div class="gallery effects-container">
+                                                    <a href="{% url 'game_summary' games.1.key %}" title="{{ games.1.team_name }}"  data-gal="prettyPhoto[galleryName]">
+                                                    	<img src="{{ STATIC_URL }}homepage/img/HPGame2.png"/>
+                                                       	 <div class="overlay">
+                                                            <span><i class=" fa fa-chevron-right"></i></span>
+
+<a href="{% url 'game_summary' games.1.key %}" title="{{ games.1.team_name }}">
+                                                    	<img src="{{ STATIC_URL }}homepage/img/HPGame2.png"/></a>
+
+
+
+                                                         </div>
+
+
+                                                     </a>
+
+                                                </div>
+                                                     <div class="overlay-caption">
+                                                              <h3>
+                                                              Team "{{ games.1.team_name }}" <br/>  High Score:{{ games.1.score }}</h3>
+                                                            </div>
+                                           </div>
+                                          
+                                           <div class="img col-lg-4 col-sm-6 col-xs-12 tn wow animated-longer-delay-2 fadeIn">
+                                                <div class="gallery effects-container">
+                                                    <a href="{% url 'game_summary' games.2.key %}" title="{{ games.2.team_name }}"  data-gal="prettyPhoto[galleryName]">
+                                                    	<img src="{{ STATIC_URL }}homepage/img/HPGame3.png"/>
+                                                       	 <div class="overlay">
+                                                            <span><i class=" fa fa-chevron-right"></i></span>
+<a href="{% url 'game_summary' games.2.key %}" title="{{ games.2.team_name }}">
+                                                    	<img src="{{ STATIC_URL }}homepage/img/HPGame3.png"/></a>
+
+
+
+
+                                                         </div>
+
+
+                                                     </a>
+
+                                                </div>
+                                                     <div class="overlay-caption">
+                                                              <h3>
+                                                              Team "{{ games.2.team_name }}" <br/>  High Score:{{ games.2.score }}</h3>
+                                                      </div>
+                                           </div>
+                                                                                     
+                                           <div class="img col-lg-4 col-sm-6 col-xs-12 tn wow animated-longer-delay-2 fadeIn">
+                                                <div class="gallery effects-container">
+                                                    <a href="{% url 'game_summary' games.3.key %}" title="{{ games.3.team_name }}"  data-gal="prettyPhoto[galleryName]">
+                                                    	<img src="{{ STATIC_URL }}homepage/img/HPGame4.png"/>
+                                                       	 <div class="overlay">
+                                                            <span><i class=" fa fa-chevron-right"></i></span>
+
+<a href="{% url 'game_summary' games.3.key %}" title="{{ games.3.team_name }}">
+                                                    	<img src="{{ STATIC_URL }}homepage/img/HPGame4.png"/></a>
+
+
+
+                                                         </div>
+
+
+                                                     </a>
+
+                                                </div>
+                                                     <div class="overlay-caption">
+                                                              <h3>
+                                                              Team "{{ games.3.team_name }}" <br/>  High Score:{{ games.3.score }}</h3>
+                                                            </div>
+                                           </div>
+                                           
+                                           <div class="img col-lg-4 col-sm-6 col-xs-12 tn wow animated-longer-delay-2 fadeIn">
+                                                <div class="gallery effects-container">
+                                                    <a href="{% url 'game_summary' games.4.key %}" title="{{ games.4.team_name }}"  data-gal="prettyPhoto[galleryName]">
+                                                    	<img src="{{ STATIC_URL }}homepage/img/HPGame5.png"/>
+                                                       	 <div class="overlay">
+                                                            <span><i class=" fa fa-chevron-right"></i></span>
+
+<a href="{% url 'game_summary' games.4.key %}" title="{{ games.4.team_name }}">
+                                                    	<img src="{{ STATIC_URL }}homepage/img/HPGame5.png"/></a>
+
+
+
+                                                         </div>
+
+
+                                                     </a>
+
+                                                </div>
+                                                     <div class="overlay-caption">
+                                                              <h3>
+                                                              Team "{{ games.4.team_name }}" <br/>  High Score:{{ games.4.score }}</h3>
+                                                            </div>
+                                           </div>
+                                  </div><!-- end hover effects wrapper-->
+                    </div><!-- / end inner container -->
+                    <div class="row text-center row-after-a-row row-of-columns">
+                          <div class="col-lg-12 col-sm-12 wow animated fadeInDown">
+                               <a style="margin: 100px" class="btn btn-xl btn-primary" href="{% url 'register' %}">Sign Up and Play</a>
+                          </div>
+                    </div>
+            <div class="clearfix"></div>
+       </section><!--=== / END gallery  ===--> 
+
+
+         <!--=== NEWS & EVENTS ===-->
+         <section id="events">
+            	<div class="bg-white">
+                    <div class="inner-container overlay-light row-of-columns"><!-- used 'row-of-columns' anytime columns will eventually stack in resposive mode adds bottom margin to all inner columns when window less than 1200px   -->
+                       <!-- section header -->
+                           <div class="row text-center">
+                              <div class="col-lg-12 col-sm-12 wow animated fadeInDown">
+                                <h1 class="">News &amp; Events</h1>
+                                <div class="accent-rule-short"></div>
+                                <h2>We both organize and share info on events that help people learn about and start using Scrumban. From free presentations to paid workshops, this is where you can find out what’s going on...  and sign up!</h2>
+                              </div>
+                           </div><!-- / end section header -->
+                           <!-- tabs -->
+                           <div class="col-sm-8 wow animated-longer-delay-1 fadeIn">
+                           <!-- Nav tabs -->
+                                <ul class="nav nav-tabs nav-justified" role="tablist">
+                                  <li class="active large"><a href="#recent-news" role="tab" data-toggle="tab">Announcements</a></li>
+                                  <li class="large"><a href="#upcoming-events" role="tab" data-toggle="tab">Upcoming Events</a></li>
+                                  <li class="large"><a href="#new-volunteers" role="tab" data-toggle="tab">Behind the Game</a></li>
+                                </ul>
+      						  <!-- Tab panes -->
+                                <div class="tab-content bg-white">
+                                      <!-- tab pane 1 -->
+                                      <div class="tab-pane active" id="recent-news">
+                                        <div id="custom-scrollbar-rec-news" class="custom-scrollbar">
+                                              <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+                                              <div class="viewport">
+                                                  <ul class="list-unstyled list-vert-solid-line-bottom overview col-lg-11 col-xs-11">
+                                                        <li>
+                                                            <!-- <div class="thumbnail-md"><img src="img/tn-xs-04.jpg" class="img-responsive pull-left" alt="image"></div> -->
+                                                            <a href="http://scrumban.io/2014/08/11/top-five-reasons-for-getscrumban.html"><h4>Top 5 Reasons for Playing GetScrumban</h4></a>
+                                                            <span class="time-stamp">August 11, 2014</span>
+                                                            <!--
+                                                            <a class="tag label label-secondary-light" href="javascript:void(0)"><i class="fa fa-tag"></i> refugee</a>
+                                                            <a class="tag label label-secondary-light" href="javascript:void(0)"><i class="fa fa-tag"></i> central  america</a>
+                                                            <a class="tag label label-secondary-light" href="javascript:void(0)"><i class="fa fa-tag"></i> volunteer</a>
+                                                            -->
+                                                        </li>
+                                                      <li>
+                                                            <!-- <div class="thumbnail-md"><img src="img/tn-xs-04.jpg" class="img-responsive pull-left" alt="image"></div> -->
+                                                            <a href="http://scrumban.io/2014/03/11/Understanding-variability-is-an-important-key-to-improving-Scrum.html"><h4>Understanding Variability is Key to Improving Scrum Practices</h4></a>
+                                                            <span class="time-stamp">March 11, 2014</span>
+                                                            <!--
+                                                            <a class="tag label label-secondary-light" href="javascript:void(0)"><i class="fa fa-tag"></i> refugee</a>
+                                                            <a class="tag label label-secondary-light" href="javascript:void(0)"><i class="fa fa-tag"></i> central  america</a>
+                                                            <a class="tag label label-secondary-light" href="javascript:void(0)"><i class="fa fa-tag"></i> volunteer</a>
+                                                            -->
+                                                        </li>
+                                                        <li>
+                                                            <!-- <div class="thumbnail-md"><img src="img/tn-xs-04.jpg" class="img-responsive pull-left" alt="image"></div> -->
+                                                            <a href="http://scrumban.io/2014/02/10/Agile-Scrum-Kanban-101.html"><h4>Scrumban 101</h4></a>
+                                                            <span class="time-stamp">February 10, 2014</span>
+                                                            <!--
+                                                            <a class="tag label label-secondary-light" href="javascript:void(0)"><i class="fa fa-tag"></i> refugee</a>
+                                                            <a class="tag label label-secondary-light" href="javascript:void(0)"><i class="fa fa-tag"></i> central  america</a>
+                                                            <a class="tag label label-secondary-light" href="javascript:void(0)"><i class="fa fa-tag"></i> volunteer</a>
+                                                            -->
+                                                        </li>
+
+                                                    </ul>
+                                               </div><!-- / end viewport -->
+                                          </div><!-- / end custom-scroll bar wrapper -->
+                                      </div><!-- / end tab pane 1 -->
+
+                                      <!-- tab pane 2 -->
+                                      <div class="tab-pane" id="upcoming-events">
+                                        <!-- carousel -->
+                                            <div class="carousel slide carousel-fade" id="carousel_2">
+                                              <div class="carousel-inner">
+                                                   <!-- item 1  -->
+                                                   <div class="item active">
+                                                        <div class="col-lg-12 row-of-columns">
+                                                            <div class="col-md-3 bg-brand-primary">
+                                                                <div class="event-date text-center ">
+                                                                    <h4 class="bold" >September</h4>
+                                                                    <h1>4</h1>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-9">
+                                                            	<span class="event-icon"><i class="fa fa-book fa-2x text-warning"></i></span>
+                                                                <h4>Agile New England - Kanban 101</h4>
+                                                                <br>
+                                                                <ul class="list-inline list-unstyled event-details list-vert-solid-line-left">
+                                                                    <li><i class="fa fa-clock-o"></i>&nbsp;&nbsp;6:00 PM </li>
+                                                                    <li><i class="fa fa-map-marker"></i>&nbsp;&nbsp;<!-- <a href="#mapModal" data-toggle="modal" role="button"></a> -->Constant Contact</li>
+                                                                    <li><a href="http://www.agilenewengland.org/">Register at ANE</a> </li>
+                                                               	</ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                        <hr class="medium">
+                                                        <div class="col-lg-12 row-of-columns">
+                                                            <div class="col-md-3 bg-brand-primary">
+                                                                <div class="event-date text-center ">
+                                                                    <h4 class="bold" >September</h4>
+                                                                    <h1>25</h1>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-9">
+                                                            	<span class="event-icon"><i class="fa fa-beer fa-2x text-warning"></i></span>
+                                                                <h4>Limited WIP Society: Lean Drinks &amp; Snacks</h4>
+                                                                <br>
+                                                                <ul class="list-inline list-unstyled event-details list-vert-solid-line-left">
+                                                                    <li><i class="fa fa-clock-o"></i>&nbsp;&nbsp;7:00 PM </li>
+                                                                    <li><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Constant Contact</li>
+                                                                    <li><a href="http://www.meetup.com/Boston-Limited-WIP/">Register Here</a> </li>
+                                                               	</ul>
+                                                            </div>
+                                                        </div>
+                                                   </div> <!-- /end item 1  -->
+
+                                                   <!--
+                                                   <!-- item 2
+                                                   <div class="item">
+                                                        <div class="col-lg-12 row-of-columns">
+                                                            <div class="col-md-3 bg-brand-primary">
+                                                                <div class="event-date text-center ">
+                                                                    <h4 class="bold" >August</h4>
+                                                                    <h1>28</h1>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-9">
+                                                            	<span class="event-icon"><i class="fa fa-camera-retro fa-2x text-warning"></i></span>
+                                                                <h4>Sunday Social: Come Out and Talk to the July Volunteers About Their Experiences</h4>
+                                                                <br>
+                                                                <ul class="list-inline list-unstyled event-details list-vert-solid-line-left">
+                                                                    <li><i class="fa fa-clock-o"></i>&nbsp;&nbsp;6:00 PM </li>
+                                                                    <li><i class="fa fa-map-marker"></i>&nbsp;&nbsp;<a href="#mapModal" data-toggle="modal" role="button">Bookstore Cafe</a></li>
+                                                                    <li><a href="javascript:void(0)">RSVP on Facebook</a> </li>
+                                                               	</ul>
+                                                            </div>
+                                                        </div>
+                                                         <div class="clearfix"></div>
+                                                        <hr class="medium">
+                                                        <div class="col-lg-12 row-of-columns">
+                                                            <div class="col-md-3 bg-brand-primary">
+                                                                <div class="event-date text-center ">
+                                                                    <h4 class="bold" >September</h4>
+                                                                    <h1>14</h1>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-9">
+                                                            	<span class="event-icon"><i class="fa fa-money fa-2x text-warning"></i></span>
+                                                                <h4>Flapjack Fundraiser: All proceeds from the breakfast benefit the organization</h4>
+                                                                <br>
+                                                                <ul class="list-inline list-unstyled event-details list-vert-solid-line-left">
+                                                                    <li><i class="fa fa-clock-o"></i>&nbsp;&nbsp;10:00 AM </li>
+                                                                    <li><i class="fa fa-map-marker"></i>&nbsp;&nbsp;<a href="#mapModal" data-toggle="modal" role="button">Bookstore Cafe</a></li>
+                                                                    <li><a href="javascript:void(0)">RSVP on Facebook</a> </li>
+                                                               	</ul>
+                                                            </div>
+                                                        </div>
+                                                   </div> <!-- /end item 2
+                                                   -->
+                                              </div> <!-- /end carousel-inner  -->
+
+                                              <!-- controls -->
+                                              <a class="left carousel-control" href="#carousel_2" role="button" data-slide="prev">
+                                                <span class="glyphicon glyphicon-chevron-left text-secondary-lighter"></span>
+                                              </a>
+                                              <a class="right carousel-control" href="#carousel_2" role="button" data-slide="next">
+                                                <span class="glyphicon glyphicon-chevron-right text-secondary-lighter"></span>
+                                              </a>
+
+                                            </div> <!-- /end carousel  -->
+                                      </div><!-- / end tab pane 2 -->
+
+                                      <!-- tab pane 3 -->
+                                      <div id="new-volunteers" class="tab-pane text-center" >
+                                        <div class="col-md-4 col-sm-6 widget-new-volunteer">
+                                        	<div class="panel">
+                                                <div class="label label-warning">Co-creator</div>
+                                                <div class="panel-body">
+                                                	<img src="{{ STATIC_URL }}homepage/img/AjayReddy.jpg" alt="image" class="img-responsive col-xs-12 no-padding">
+                                                </div>
+                                                <div class="panel-footer">
+                                                    <h4>Ajay Reddy</h4>
+                                                    <small></small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 widget-new-volunteer">
+                                        	<div class="panel">
+                                                <div class="label label-warning">Co-creator</div>
+                                                <div class="panel-body">
+                                                	<img src="{{ STATIC_URL }}homepage/img/marc-hughes.jpg" alt="image" class="img-responsive col-xs-12 no-padding">
+                                                </div>
+                                                <div class="panel-footer">
+                                                    <h4>Marc Hughes</h4>
+                                                    <small></small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4  col-sm-6 widget-new-volunteer">
+                                        	<div class="panel">
+                                                <div class="label label-warning">Co-creator</div>
+                                                <div class="panel-body">
+                                                	<img src="{{ STATIC_URL }}homepage/img/jack-speranza.jpg" alt="image" class="img-responsive col-xs-12 no-padding">
+                                                </div>
+                                                <div class="panel-footer">
+                                                    <h4>Jack Speranza</h4>
+                                                    <small></small>
+                                                </div>
+                                             </div>
+                                        </div>
+                                      </div><!-- / end tab pane 3 -->
+                                      <div class="clearfix"></div>
+                                </div>
+                        </div><!-- / end tabs -->
+
+                        <!-- recent campaign carousel -->
+                        <div class="col-sm-4 widget-campaign wow animated-longer-delay-1 fadeIn">
+
+
+ <div style="text-align: center; float: left; margin: 0 15px 8px 0; width: 600px;"><iframe src="//www.slideshare.net/slideshow/embed_code/38981943" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe> <p style="font-size: small; font-style: italic;">GetScrumban Game
+
+Facilitator Guide</p>
+
+ </div>
+
+
+               </div><!-- /end background container -->
+
+              <!-- Sample Map Modal for Upcoming Events -->
+              <div class="modal fade" id="mapModal">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-body modal-body-margin-top">
+   					  <!-- map -->
+   					  <div id="map-modal-event"></div><!-- /end map -->
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><br>
+                      <h4 class="modal-title">Constant Contact</h4>
+                      <p>Waltham, MA
+                      <br><br>
+                      <span class="text-primary"> <a href="javascript:void(0)">Map</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:void(0)">Directions</a></span>
+                      <br><br>
+					  <span class="time-stamp">Hours: Mon–Fri: 10 AM–9 PM, Sat–Sun: 10 AM–5 PM</span>
+                      </p>
+                    </div>
+                  </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+              </div><!-- /.modal -->
+            </div></div>
+         </section><!--=== / END news & events  ===-->
+
+   	  <!--=== CONTACT ===-->
+      <section id="contact">
+            <div class="row">
+                <div class="span4 collapse-group">
+                  <div id="viewdetails" class="bg-brand-tertiary collapse">
+                    <div class="inner-container animated fadeIn">
+
+                          <div class="col-lg-8">
+                           <!-- contact form -->    
+                           <div class="col-lg-12 no-padding">
+                           		<div class="col-lg-8 no-padding"><p id="contactResponse"></p></div>
+                           </div>
+
+                           <h1 style="margin-bottom: 0px">Email</h1>
+                              <h2 style="margin-bottom: 40px;">
+                                <a href="mailto:game@getscrumban.com">game@getscrumban.com</a>
+                              </h2>
+                           <h1 style="margin-bottom: 0px">Twitter</h1>
+                              <h2 style="margin-bottom: 40px;">
+                                <a href="http://www.twitter.com/getscrumban">@getscrumban</a>
+                              </h2>
+                           <h1 style="margin-bottom: 0px">Facebook</h1>
+                              <h2 style="margin-bottom: 40px;">
+                                <a href="https://www.facebook.com/scrumban">www.facebook.com/scrumban</a>
+                              </h2>
+
+                          </div><!-- /end contact form -->   
+                          <div class="col-lg-4 col-sm-12 col-right-responsive-fix">
+                         	<h3>We want to hear from you</h3>
+                            <p>We like engaging with people, and invite you to connect with us via your favorite medium.</p>
+                            <br>
+                            <h3>Have any questions?</h3>
+
+                            <p>We love sharing information about Scrumban and our experiences using it in different environments.</p>
+                            <br>
+                            <h3>Stay up to Date</h3>
+                            <p>Keep informed by signing up for email updates. We promise we won't send you any junk mail.  </p>
+                            <div class="col-lg-9 col-sm-5 no-padding">
+                                <form action="//getscrumban.us2.list-manage.com/subscribe/post?u=a18c900c76476ec5d6167521b&amp;id=d2cfd8e486" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                    <div class="input-group">
+                                        <input name="EMAIL" type="email" class="form-control" placeholder="Email Address">
+                                        <span class="input-group-btn">
+                                            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">
+                                        </span>
+                                        <div style="position: absolute; left: -5000px;"><input type="text" name="b_a18c900c76476ec5d6167521b_206ca7b373" tabindex="-1" value=""></div>
+                                    </div>                  
+                                </form>
+
+                            </div>
+                         </div>
+                        <div class="clearfix"></div> 
+                    </div>
+                  </div>
+                </div><!-- / end collapse-group -->
+            </div><!-- / end row -->
+            <div class="bg-brand-tertiary thin-strip">&nbsp;</div>
+            <div class="wrapper-relative bg-white">
+               <!-- map -->
+               <div id="map" class="wow animated-longer-delay-4"> </div><!-- / end map -->
+                               <!-- contact toggle -->
+               <div class="float-over-top">
+                        <div id="contact-toggle" class="tab-down tab-down-tertiary"><a class="" data-toggle="collapse" data-target="#viewdetails"><h3>Send us a message <i class="fa fa-chevron-down"></i></h3></a></div>
+               </div><!--/ end contact toggle -->
+ 
+            </div>
+      </section> <!--=== / END contact ===-->
+        
+      <!--=== FOOTER ===-->
+      <section id="footer">
+          <!-- Row 1 -->
+              <div class="row footer-top">
+                  <div class="inner-container-small wow animated fadeIn">
+                      <div class="col-md-3">
+                            <!-- Mission -->
+                            <div class="headline"><h5>Behind the Game</h5></div>  
+                            <p>GetScrumban was created by the team at <a href="http://scrumdo.com" target="_blank" title="Project Management and Collaboration Tool for Scrum Teams">ScrumDo</a> and <a href="http://codegenesys.com" target="_blank" title="Boutique IT Solutions and Training Firm">Code Genesys</a>.  </p><!-- end Mission -->
+                            
+                            <!-- Monthly Newsletter -->
+                            <div class="headline"><h5>Newsletter</h5></div> 
+                            <p>Subscribe to our newsletter and stay up to date with the latest news!</p>
+                                <!-- Begin MailChimp Signup Form -->
+                                <div class="footer-subscribe">
+                                <form action="//getscrumban.us2.list-manage.com/subscribe/post?u=a18c900c76476ec5d6167521b&amp;id=d2cfd8e486" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                    <div class="input-group">
+
+                                    <input type="text" value="" name="EMAIL" class="form-control" placeholder="email address" required>
+                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                    <div style="position: absolute; left: -5000px;"><input type="text" name="b_a18c900c76476ec5d6167521b_206ca7b373" tabindex="-1" value=""></div>
+                                    <span class="input-group-btn">
+                                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">
+                                    </span>
+                                    </div>
+                                </form>
+                                </div>
+
+<!--End mc_embed_signup-->
+                      </div>
+                      <div class="col-md-3">
+                                <div class="content-stacked">
+                                    <!-- Community -->
+                                    <div class="headline-first"><h5>Resources</h5></div>
+                                          <ul class="list-unstyled list-vert-solid-line">
+                                              <li><i class="fa fa-angle-right text-primary"></i><a href="http://scrumban.io">About Scrumban</a></li>
+                                              <li><i class="fa fa-angle-right text-primary"></i><a href="http://scrumdo.com">ScrumDo Project Management Tool</a></li>
+                                              <li><i class="fa fa-angle-right text-primary"></i><a href="http://codegenesys.com">Coaching &amp; Consulting</a></li>
+                                              <li><i class="fa fa-angle-right text-primary"></i><a href="http://codegenesys.com/events">Upcoming Workshops</a></li>
+                                              <!--
+                                              <li><i class="fa fa-angle-right text-primary"></i><a href="javascript:void(0)">Donors</a></li>
+                                              <li><i class="fa fa-angle-right text-primary"></i><a href="javascript:void(0)">Related</a></li>
+                                            -->
+                                          </ul><!-- / end Community -->
+                                    <div class="clearfix"></div>
+                             </div>
+                      </div>
+                      <div class="col-md-3">
+                            <!-- Recent Blog Entries -->
+                            <!--
+                              <div class="blog-posts">
+                                  <div class="headline"><h5>Recent Blog Entries</h5></div>
+                                  <div class="post col-lg-12 no-padding">
+                                      <a href="javascript:void(0)"><strong class="text-primary">Syria: the Dangers</strong><br> 
+                                      Home replaced by a perilous sea journey to Italy...</a><br>
+                                      <i><small>Posted by Administrator</small></i>
+                                  </div>          	
+                                  <div class="post col-lg-12 no-padding">
+                                      <a href="javascript:void(0)"><strong class="text-primary">Displacement of thousands</strong><br>
+                                      <i>Now headed for a region that’s already overstretcheded...</i></a><br>
+                                      <i><small>Posted by Administrator</small></i>                           	
+                                  </div> 
+                                      
+                                  <div class="post col-lg-12 no-padding">
+                                      <a href="javascript:void(0)"><strong class="text-primary">Six months of fighting</strong><br>
+                                      <i>A generation of children at risk...</i></a>    <br>
+                                      <i><small>Posted by Administrator</small></i>                       	
+                                   </div> 
+                             </div>
+                             -->
+                             <!-- / end recent blog entries -->
+                      </div>
+                      <div class="col-md-3 last">
+                        <div class="headline-first"><h5>Photos</h5></div>
+					    <!-- Flickr -->
+                        <div id="flickr-wrapper"><div id="flickr-stream"></div></div><!-- / end flickr -->
+                      </div>
+                      <div class="clearfix"></div>
+                   </div><!-- / end inner container -->
+              </div><!-- / end Row 1 -->
+			 <!-- Row 2 -->
+              <div class="row footer-bottom">
+                  <div class="inner-container-small wow animated fadeIn">
+                      <div class="col-lg-3 col-sm-12 left"><p><small class="transparent-50">© 2014 ScrumDo LLC &amp; Code Genesys LLC. All Rights Reserved.GetScrumban Game was inspired by GetKanban Game</small></p></div>
+                      <div class="col-lg-3 col-sm-12 pull-right">
+                           <div class="list-social transparent-50 pull-right">
+                                <ul class="list-inline">
+                                    <li><a href="http://facebook.com/scrumban"><i class="fa fa-facebook transparent"></i></a></li>
+                                    <li><a href="http://twitter.com/getscrumban"><i class="fa fa-twitter transparent"></i></a></li>
+                                    <!--
+                                    <li><a href="javascript:void(0)"><i class="fa fa-dribbble transparent"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="fa fa-tumblr transparent"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="fa fa-flickr transparent"></i></a></li>
+                                    -->
+                                </ul>
+                            </div>
+                      </div>
+                  </div>
+              </div><!-- / end Row 2 -->
+        </section><!--=== END Footer ===-->       
+        <!-- Core JavaScript Files -->
+		<script src="homepage/js/jquery-1.11.0.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="homepage/js/bootstrap.min.js"></script>
+	    <!-- Plugins -->
+		<script src="https://maps.googleapis.com/maps/api/js"></script>
+		<script src="homepage/js/modernizr.js"></script>
+        <script src="homepage/js/jquery.easing.min.js"></script>
+		<script src="homepage/plugins/WOW-master/wow.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+		<script src="homepage/plugins/prettyPhoto_uncompressed_3.1.5/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" src="homepage/plugins/tinyscrollbar-master/lib/jquery.tinyscrollbar.js"></script>
+        <script type="text/javascript" src="homepage/plugins/jquery-countTo-master/jquery.countTo.js"></script>
+        <!-- these next three are for the date picker in the the 'schedule an event' modal window -->
+		<script type="text/javascript" src="homepage/js/moment.js"></script>
+		<script src="homepage/plugins/bootstrap-datetimepicker-master/src/js/locales/bootstrap-datetimepicker.en-au.js" type="text/javascript" charset="utf-8"></script>
+		<script src="homepage/plugins/bootstrap-datetimepicker-master/src/js/bootstrap-datetimepicker.js" type="text/javascript" charset="utf-8"></script>
+	    <!-- Custom Theme JavaScript -->
+        <script src="homepage/js/act.js"></script>
+
+	
+
+	
+	</body>
+</html>

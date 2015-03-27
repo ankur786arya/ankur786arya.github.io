@@ -1,0 +1,80 @@
+<!doctype html><head>
+    <meta charset="utf-8">
+    <title>ScrumDo Events</title>
+    <link href="fullcalendar-2.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href='fullcalendar-2.3.1/fullcalendar.css' rel='stylesheet' />
+	<link href='fullcalendar-2.3.1/fullcalendar.print.css' rel='stylesheet' media='print' />
+	<link href="fullcalendar-2.3.1/css/act.css" rel="stylesheet">    
+	<link href="fullcalendar-2.3.1/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">  
+	<style>
+		
+	</style>
+	</head>
+	<body class="subpage" style="background:transparent;">
+    
+    <!-- preloader -->
+    
+       <section id="events-calendar">
+            <div class="">
+                  <div class="inner-container overlay-light">
+                  		<!-- section header -->
+                           <div class="header row text-center">
+                              <div class="col-lg-8 col-xs-12 col-lg-offset-2 wow animated fadeInDown">
+                                <h1>What's Going On</h1>
+                                <div class="accent-rule-short"></div>
+                                <h2>check out our upcoming events! If you are interested in submitting an event for posting consideration, please use this <a href="#submiteventModal"  data-toggle="modal" data-target="#submiteventModal">form.</a>  </h2>
+                              </div>
+                           </div><!-- / end section header -->
+                           <div id='calendar' class="wow animated-longer-delay-4 fadeInDown"></div>
+           		  </div>
+            </div>
+       </section><!--=== /END events calendar ===-->
+	   
+	   <div class="modal fade" id="submiteventModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                  <h2 class="modal-title text-tertiary" id="myModalLabel">Submit an Event</h2>
+                </div>
+                <div class="modal-body">
+                <iframe src="" frameborder="0" scrolling="yes" height="100%" width="100%" ></iframe>
+                </div>
+                <div class="modal-footer">
+                  
+                </div>
+              </div>
+            </div>
+          </div><!-- /END submit event modal -->
+		  
+		  
+		<!-- fullcalendar -->
+		<script src='fullcalendar-2.3.1/lib/moment.min.js'></script>
+        <script src='fullcalendar-2.3.1/lib/jquery.min.js'></script>
+		<script src='fullcalendar-2.3.1/lib/bootstrap.min.js'></script>
+        <script src='fullcalendar-2.3.1/fullcalendar.min.js'></script>
+		<script src='fullcalendar-2.3.1/gcal.js'></script>
+		<script>
+		$(document).ready(function() {
+			$('#calendar').fullCalendar({
+			googleCalendarApiKey: 'AIzaSyDcucUIKiYn9X6X0AzARmAcRhKz_SpChto',
+			events: 'codegenesys.com_lb6h35i09i7674u548ag0klrrk@group.calendar.google.com',
+			eventClick: function(event) {
+				window.open(event.url, 'gcalevent', 'width=700,height=600');
+				return false;
+			},
+			loading: function(bool) {
+				$('#loading').toggle(bool);
+			}
+			});
+			
+			$('.modal').on('shown.bs.modal',function(){
+				$('.modal-content').css({height:$( window ).height()*0.5+'px'});
+				$(this).find('iframe').css({height:$( window ).height()*0.4+'px'}).attr('src','https://docs.google.com/forms/d/1e02K-q1m9eoE2YcGJvpE2vBiXqe-LMdmzCdwgjuRQv0/viewform?embedded=true');
+			});
+			
+		});
+		</script>
+
+</body>
+</html>
